@@ -4,13 +4,26 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+const livereload = require('livereload');
+const connectLiveReload = require('connect-livereload');
+
 require('dotenv').config();
 require('./config/database');
 
 var indexRouter = require('./routes/index');
 var drinksRouter = require('./routes/drinks');
 
+// live reload on npm run dev - for styling only
+const liveReloadServer = livereload.createServer();
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh('/');
+  }, 100)
+})
+
 var app = express();
+
+app.use(connectLiveReload());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
