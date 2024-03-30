@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+const drinksCtrl = require('../controller/drinksController');
+
+// all paths relative to index
+
+// GET / render index 
+router.get('/', drinksCtrl.index);
 
 module.exports = router;

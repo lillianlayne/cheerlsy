@@ -1,17 +1,19 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-
-const livereload = require('livereload');
-const connectLiveReload = require('connect-livereload');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
 require('dotenv').config();
 require('./config/database');
 
-var indexRouter = require('./routes/index');
-var drinksRouter = require('./routes/drinks');
+const livereload = require('livereload');
+const connectLiveReload = require('connect-livereload');
+
+
+const indexRouter = require('./routes/index');
+const drinksRouter = require('./routes/drinks');
+const reviewsRouter = require('./routes/reviews');
 
 // live reload on npm run dev - for styling only
 const liveReloadServer = livereload.createServer();
@@ -37,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/drinks', drinksRouter);
+app.use('/drinks', reviewsRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
