@@ -7,5 +7,8 @@ const indexCtrl = require('../controller/indexController');
 
 // GET / render index 
 router.get('/', indexCtrl.index)
+// GET /categories/drinks
+router.get('/categories/drinks/:category', indexCtrl.showCategory)
+
 
 module.exports = router;

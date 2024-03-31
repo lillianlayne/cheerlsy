@@ -29,6 +29,18 @@ const index = async (req, res) => {
     res.render('index', {drinks, getBgColor})
 }
 
+const showCategory = async (req, res) => {
+   const {category} = req.params;
+
+   try {
+    const drinks = await Drinks.find({ category: category });
+    res.render('categories/drinks', {drinks, category})
+   } catch (error) {
+    console.log(error)
+   }
+}
+
 module.exports = {
-    index
+    index, 
+    showCategory
 }

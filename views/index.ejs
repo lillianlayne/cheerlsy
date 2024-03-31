@@ -29,37 +29,6 @@
 </div>
 
 <div class="index-drinks-section">
-  <% drinks.forEach(drink => { %>
-
-  <div
-    class="drink-container"
-    style="background: <%= getBgColor(drink.category) %>"
-  >
-    <div class="drink-img"></div>
-    <h1><%= drink.label %></h1>
-    <a href="/drinks/<%= drink._id %>" class="btn-secondary"
-      ><svg
-        width="156"
-        height="140"
-        viewBox="0 0 156 140"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 70L153 70"
-          stroke="black"
-          stroke-width="4"
-          stroke-linecap="round"
-        />
-        <path
-          d="M84.8822 2L152.764 69.8822L84.8822 137.764"
-          stroke="black"
-          stroke-width="4"
-          stroke-linecap="round"
-        />
-      </svg>
-    </a>
-  </div>
-  <% }) %>
+  
 </div>
 <%- include('./partials/footer') %>

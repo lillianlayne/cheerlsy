@@ -49,7 +49,10 @@ const reviewSchema = new Schema({
 
 
 const drinkSchema = new Schema({
-    category: String,
+    category: {
+      type: String,
+      enum: ['beer', 'wine', 'cocktails', 'mocktails']
+    },
     label: String,
     reviews: [reviewSchema]
   });
