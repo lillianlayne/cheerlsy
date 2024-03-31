@@ -2,9 +2,10 @@
 
 :root {
   --light-bg: #E1D6B8;
-  --accent-1: #E75930;
-  --accent-2: #8296DF;
-  --accent-3: #256854;
+  --accent-1: #e65227;
+  --accent-2: #fbb71f;
+  --accent-3: #414e24;
+  --accent-4: #f05365;
   --text-500: #282728;
   --text-100: #ffffff;
 }
@@ -31,8 +32,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  max-width: 1200px;
   gap: 32px;
+  width: 100%;
 }
 
 /* flex-containers */
@@ -87,9 +88,11 @@ h1 {
 
 nav {
   display: flex;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--text-500)
 }
 
 /* media queries */

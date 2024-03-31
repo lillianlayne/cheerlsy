@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-const drinksCtrl = require('../controller/drinksController');
+const indexCtrl = require('../controller/indexController');
 
 // all paths relative to index
 
 // GET / render index 
-router.get('/', drinksCtrl.index);
+router.get('/', indexCtrl.index)
 
 module.exports = router;
