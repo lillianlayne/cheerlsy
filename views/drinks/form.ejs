@@ -1,40 +1,45 @@
 <%- include('../partials/header') %>
 <%= drink %>
 
-<form action="" method="post">
+<form action="/drinks/reviews/<%= drink._id %>" method="post">
     <input type="hidden" name="drinkId" value="<%= drink._id %>">
 
 <div class="star-rating">
     <p><strong>Taste</strong>: needs no explanation, but did it suck or not?</p>
-    <input type="radio" name="taste" class="star-rating" value="1">
-    <input type="radio" name="taste" class="star-rating" value="2">
-    <input type="radio" name="taste" class="star-rating" value="3">
-    <input type="radio" name="taste" class="star-rating" value="4">
-    <input type="radio" name="taste" class="star-rating" value="5">
+    <label for="star-1"></label>
+    <input type="radio" name="taste" class="star-rating star-shape" value="1">
+    <label for="star-2"></label>
+    <input type="radio" name="taste" class="star-rating star-shape" value="2">
+    <label for="star-3"></label>
+    <input type="radio" name="taste" class="star-rating star-shape" value="3">
+    <label for="star-4"></label>
+    <input type="radio" name="taste" class="star-rating star-shape" value="4">
+    <label for="star-5"></label>
+    <input type="radio" name="taste" class="star-rating star-shape" value="5">
 </div>
 <div class="star-rating">
     <p><strong>Presentation</strong>: if there was a dried piece of fruit on your drink, it's an automatic five stars.</p>
-    <input type="radio" name="taste" class="star-rating" value="1">
-    <input type="radio" name="taste" class="star-rating" value="2">
-    <input type="radio" name="taste" class="star-rating" value="3">
-    <input type="radio" name="taste" class="star-rating" value="4">
-    <input type="radio" name="taste" class="star-rating" value="5">
+    <input type="radio" name="presentation" class="star-rating" value="1">
+    <input type="radio" name="presentation" class="star-rating" value="2">
+    <input type="radio" name="presentation" class="star-rating" value="3">
+    <input type="radio" name="presentation" class="star-rating" value="4">
+    <input type="radio" name="presentation" class="star-rating" value="5">
 </div>
 <div class="star-rating">
     <p><strong>Vibe Check</strong>: what were the vibes of the restaurant like?</p>
-    <input type="radio" name="taste" class="star-rating" value="1">
-    <input type="radio" name="taste" class="star-rating" value="2">
-    <input type="radio" name="taste" class="star-rating" value="3">
-    <input type="radio" name="taste" class="star-rating" value="4">
-    <input type="radio" name="taste" class="star-rating" value="5">
+    <input type="radio" name="localVibe" class="star-rating" value="1">
+    <input type="radio" name="localVibe" class="star-rating" value="2">
+    <input type="radio" name="localVibe" class="star-rating" value="3">
+    <input type="radio" name="localVibe" class="star-rating" value="4">
+    <input type="radio" name="localVibe" class="star-rating" value="5">
 </div>
 <div class="star-rating">
     <p><strong>Price</strong>: yah it was good, but was it what-you-paid-for good?</p>
-    <input type="radio" name="taste" class="star-rating" value="1">
-    <input type="radio" name="taste" class="star-rating" value="2">
-    <input type="radio" name="taste" class="star-rating" value="3">
-    <input type="radio" name="taste" class="star-rating" value="4">
-    <input type="radio" name="taste" class="star-rating" value="5">
+    <input type="radio" name="price" class="star-rating" value="1">
+    <input type="radio" name="price" class="star-rating" value="2">
+    <input type="radio" name="price" class="star-rating" value="3">
+    <input type="radio" name="price" class="star-rating" value="4">
+    <input type="radio" name="price" class="star-rating" value="5">
 </div>
 <div class="restaurant">
     <p>Where'd you enjoy this drink?</p>
