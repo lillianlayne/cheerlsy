@@ -1,7 +1,13 @@
 <%- include('../partials/header') %>
 
-<div class="category-drink-container">
-<%= drinks %>
-</div>
+<h1><%= category %></h1>
+
+<% drinks.forEach(drink => { %>
+ <a href="" class="category-drink-container">
+    <div class="image"></div>
+    <h2><%= drink.label %></h2>
+    <div class="sub-copy">reviews: <%= drink.reviews.length %></div>
+ </a>
+<% }) %>
 
 <%- include('../partials/footer') %>

@@ -1,10 +1,10 @@
 const Drinks = require('../models/drinkModel');
 
 const showCategory = async (req, res) => {
-    const oneCategory = req.params.category;
-    const drinks = await Drinks.find({category: oneCategory});
-
-    res.render('categories/drinks', {drinks})
+    const title = req.params.category.trim();
+    const drinks = await Drinks.find({category: title});
+   
+    res.render('categories/drinks', {drinks, catagory: title})
 }
 
 module.exports = {
