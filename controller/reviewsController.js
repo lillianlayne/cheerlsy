@@ -6,6 +6,8 @@ const renderForm = async (req, res) => {
     res.render('drinks/form', {drink})
 }
 
+
+
 module.exports = {
     renderForm
 }

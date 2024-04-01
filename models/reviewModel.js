@@ -4,18 +4,12 @@ const Schema = mongoose.Schema;
 
 const reviewSchema = new Schema({
     comment: String,
-    tatse: {
+    taste: {
       type: Number,
       min: 1,
       max: 5,
       required: true
     }, 
-    tatse: {
-      type: Number,
-      min: 1,
-      max: 5,
-      required: true
-    },
     presentation: {
       type: Number,
       min: 1,

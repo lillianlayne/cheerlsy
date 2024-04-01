@@ -1,3 +1,54 @@
 <%- include('../partials/header') %>
 <%= drink %>
+
+<form action="" method="post">
+    <input type="hidden" name="drinkId" value="<%= drink._id %>">
+
+<div class="star-rating">
+    <p><strong>Taste</strong>: needs no explanation, but did it suck or not?</p>
+    <input type="radio" name="taste" class="star-rating" value="1">
+    <input type="radio" name="taste" class="star-rating" value="2">
+    <input type="radio" name="taste" class="star-rating" value="3">
+    <input type="radio" name="taste" class="star-rating" value="4">
+    <input type="radio" name="taste" class="star-rating" value="5">
+</div>
+<div class="star-rating">
+    <p><strong>Presentation</strong>: if there was a dried piece of fruit on your drink, it's an automatic five stars.</p>
+    <input type="radio" name="taste" class="star-rating" value="1">
+    <input type="radio" name="taste" class="star-rating" value="2">
+    <input type="radio" name="taste" class="star-rating" value="3">
+    <input type="radio" name="taste" class="star-rating" value="4">
+    <input type="radio" name="taste" class="star-rating" value="5">
+</div>
+<div class="star-rating">
+    <p><strong>Vibe Check</strong>: what were the vibes of the restaurant like?</p>
+    <input type="radio" name="taste" class="star-rating" value="1">
+    <input type="radio" name="taste" class="star-rating" value="2">
+    <input type="radio" name="taste" class="star-rating" value="3">
+    <input type="radio" name="taste" class="star-rating" value="4">
+    <input type="radio" name="taste" class="star-rating" value="5">
+</div>
+<div class="star-rating">
+    <p><strong>Price</strong>: yah it was good, but was it what-you-paid-for good?</p>
+    <input type="radio" name="taste" class="star-rating" value="1">
+    <input type="radio" name="taste" class="star-rating" value="2">
+    <input type="radio" name="taste" class="star-rating" value="3">
+    <input type="radio" name="taste" class="star-rating" value="4">
+    <input type="radio" name="taste" class="star-rating" value="5">
+</div>
+<div class="restaurant">
+    <p>Where'd you enjoy this drink?</p>
+    <input type="text" name="restaurant" id="" placeholder="enter bar or restaurant name">
+</div>
+<div class="locale">
+    <p>Where ya at?</p>
+    <div>
+        <input type="text" name="city" id="" placeholder="city">
+        <input type="text" name="state" id="" placeholder="state">
+    </div>
+    <button type="submit">add review</button>
+</div>
+
+
+</form>
 <%- include('../partials/footer') %>
