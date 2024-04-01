@@ -36,34 +36,6 @@ body {
   width: 100%;
 }
 
-/* flex-containers */
-
-.flx-ctr-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.flx-ctr-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.flx-auto-col {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.flx-auto-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 /* typography */
 h1 {
   font-size: 24px;
@@ -81,9 +53,14 @@ h1 {
   height: 30px;
 }
 
-.btn-secondary > svg {
-  height: 20px;
-  transform: rotate(45deg)
+.btn-secondary {
+  background-image: url('../images/arrow.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 30px;
+  transform: rotate(45deg);
+  background-position: center;
 }
 
 nav {

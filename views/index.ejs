@@ -29,6 +29,13 @@
 </div>
 
 <div class="index-drinks-section">
-  
+  <% allCategories.forEach(category => { %>
+    <% const bgColor = getBgColor(category) %>
+    <a href="/categories/drinks/<%= category %>"  class="drink-container" style="background: <%= bgColor %>;">
+        <div class="drink-img"></div>
+        <h1><%= category %></h1>
+        <div class="btn-secondary"></div>
+    </a>
+  <% }) %>
 </div>
 <%- include('./partials/footer') %>

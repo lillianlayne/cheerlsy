@@ -14,6 +14,7 @@ const connectLiveReload = require('connect-livereload');
 const indexRouter = require('./routes/index');
 const drinksRouter = require('./routes/drinks');
 const reviewsRouter = require('./routes/reviews');
+const categoriesRouter = require('./routes/categories');
 
 // live reload on npm run dev - for styling only
 const liveReloadServer = livereload.createServer();
@@ -40,6 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/drinks', drinksRouter);
 app.use('/drinks', reviewsRouter);
+app.use('/categories', categoriesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
