@@ -8,6 +8,9 @@ const drinksCtrl = require('../controller/drinksController');
 router.get('/new', drinksCtrl.new)
 // POST /new - post a new drink to the data base
 router.post('/new', drinksCtrl.createDrink)
+// GET /reviews/:id - render the reviews page for a specific drink
+router.get('/reviews/:id', drinksCtrl.show)
+
 
 
 

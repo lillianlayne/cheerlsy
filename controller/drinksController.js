@@ -10,7 +10,15 @@ const createDrink = async (req, res) => {
     res.redirect('/drinks/new')
 }
 
+const showReviews = async (req, res) => {
+    const drink = await Drinks.findById(req.params.id);
+    res.render('drinks/reviews', {drink})
+}
+
+
+
 module.exports = {
     new: newDrink, 
-    createDrink
+    createDrink,
+    show: showReviews, 
 }
