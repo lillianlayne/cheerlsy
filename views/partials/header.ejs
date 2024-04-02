@@ -12,4 +12,14 @@
  <nav>
     <a href="/" class="logo">cheersly</a>
     <a href="/drinks/new">add drink</a>
+    <a href="/">
+      <% if (user) { %>
+       <a href="/logout">logout</a>
+
+       <% } else { %>
+        <a href="/auth/google" class="login">login</a>
+
+
+      <% } %>
+    </a>
  </nav>

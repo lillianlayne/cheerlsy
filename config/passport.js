@@ -9,7 +9,7 @@ passport.use(new GoogleStrategy({
 },
 async function(accessToken, refreshToken, profile, cb) {
     try {
-        let user = await User.findOne({googleId: profileId});
+        let user = await User.findOne({googleId: profile.Id});
         if (user) return cb(null, user);
 
         user = await User.create({
