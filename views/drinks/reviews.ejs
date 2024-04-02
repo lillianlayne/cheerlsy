@@ -1,5 +1,41 @@
 <%- include('../partials/header') %>
+
+<div class="drink-reviews-header">
+    <div class="image">
+    </div>
+    <div class="drink-details">
+        <div class="main-headline">
+            <%= drink.label %>
+        </div>
+        <div class="review-overview">
+            <div class="review-row">
+                <p>overall score</p>
+                <div class="review-score">
+                    5/5
+                </div>
+            </div>
+            <div class="review-row">
+                <p>best city</p>
+                <div class="review-score">
+                    Chattanooga, TN
+                </div>
+            </div>
+            <div class="review-row">
+                <p>best restaurant</p>
+                <div class="review-score">
+                    Tremont Tavern
+                </div>
+            </div>
+            
+        </div>
+        <a class="btn-primary" href="/drinks/form/<%= drink._id %>">add review</a>
+    </div>
+</div>
+
+<div class="drink-banner">
+    <div class="subtitle">see what the people are saying</div>
+    <div class="filters">filters</div>
+</div>
 <%= drink %> <br>
 <%= drink.reviews.length %>
-<a href="/drinks/form/<%= drink._id %>">add review</a>
 <%- include('../partials/footer') %>

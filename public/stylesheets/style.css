@@ -24,7 +24,7 @@ a {
 }
 
 body {
-  background: var(--light-bg);
+  background: white;
   color: var(--text-500);
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
@@ -32,14 +32,24 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 32px;
-  width: 100%;
+  gap: 54px;
+  max-width: 1280px;
 }
+
+
 
 /* typography */
 h1 {
   font-size: 24px;
   font-weight: 300
+}
+
+h2 {
+  font-family: tandelle, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 44px;
 }
 
 .title {
@@ -49,8 +59,14 @@ h1 {
 
 
 /* CTAs */
-.btn-primary > svg{
-  height: 30px;
+.btn-primary {
+  height: 60px;
+  width: 400px;
+  border-radius: 100px;
+  background: lightgrey;
+  text-align: center;
+  display: grid;
+  place-items: center;
 }
 
 .btn-secondary {
@@ -69,17 +85,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px solid var(--text-500)
+  position: fixed;
 }
 
-/* media queries */
-
-@media only screen and (max-width: 728px) {
-  body {
-    max-width: 88%;
-  }
-
-  .title {
-    font-size: 64px
-  }
+.footer {
+  height: 120px;
 }
+

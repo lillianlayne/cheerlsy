@@ -1,40 +1,28 @@
 <%- include('./partials/header') %>
-<div class="header">
-  <div class="title">discover the best drink ever</div>
-  <div class="search flx-ctr-row">
-    <input type="text" name="" id="search" />
-    <a href="" class="btn-primary"
-      ><svg
-        width="156"
-        height="140"
-        viewBox="0 0 156 140"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 70L153 70"
-          stroke="black"
-          stroke-width="4"
-          stroke-linecap="round"
-        />
-        <path
-          d="M84.8822 2L152.764 69.8822L84.8822 137.764"
-          stroke="black"
-          stroke-width="4"
-          stroke-linecap="round"
-        />
-      </svg>
-    </a>
+<div class="header max-width">
+  <div class="main-headline">
+    discover the<br>perfect pour <br>with cheersly
   </div>
+  <div class="main-image"></div>
+</div>
+
+<div class="search-section">
+  <form action="" class="main-search">
+    <div class="main-search">
+      <input type="text" class="main-search-bar">
+      <button type="submit">Search</button>
+    </div>
+  </form>
 </div>
 
 <div class="index-drinks-section">
   <% allCategories.forEach(category => { %>
     <% const bgColor = getBgColor(category) %>
-    <a href="/categories/drinks/<%= category %>"  class="drink-container" style="background: <%= bgColor %>;">
-        <div class="drink-img"></div>
-        <h1><%= category %></h1>
-        <div class="btn-secondary"></div>
+    <a href="/categories/drinks/<%= category %>"  class="drink-container">
+      <div class="category-card-top">
+        <h2><%= category %></h2>
+        <p><%= category.length %></p>
+      </div>      
     </a>
   <% }) %>
 </div>

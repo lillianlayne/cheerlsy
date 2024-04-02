@@ -1,13 +1,20 @@
 <%- include('../partials/header') %>
+<div class="category-main-title">
+  
+      <div class="category-sub-nav">categories / <%= category %></div>
+  
+  All <%= category %>
+</div>
 
-<h1><%= category %></h1>
+<div class="category-drink-container">
 
-<% drinks.forEach(drink => { %>
- <a href="/drinks/reviews/<%= drink._id %>" class="category-drink-container">
-    <div class="image"></div>
-    <h2><%= drink.label %></h2>
-    <div class="sub-copy">reviews: <%= drink.reviews.length %></div>
- </a>
-<% }) %>
+   <% drinks.forEach(drink => { %>
+      <a href="/drinks/reviews/<%= drink._id %>" class="category-drink-card">
+         <div class="image"></div>
+         <h2><%= drink.label %></h2>
+         <div class="sub-copy">reviews: <%= drink.reviews.length %></div>
+      </a>
+      <% }) %>
+   </div>
 
 <%- include('../partials/footer') %>
