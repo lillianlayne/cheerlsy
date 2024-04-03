@@ -52,17 +52,25 @@
 .index-drinks-section {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 20px;
 }
 
-.drink-container {
-  background: lightgrey;
+.category-container {
+  background-size: cover;
   aspect-ratio: 3 / 4;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+}
+
+.category-image {
+  height: 300px;
+  background-size: cover;
+  position: absoulte;
+
 }
 
 .category-card-top {

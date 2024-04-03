@@ -18,7 +18,8 @@
 <div class="index-drinks-section">
   <% allCategories.forEach(category => { %>
     <% const bgColor = getBgColor(category) %>
-    <a href="/categories/drinks/<%= category %>"  class="drink-container">
+    <a href="/categories/drinks/<%= category %>"  class="category-container">
+      <div class="category-image" style="background-image: url('/images/category-<%= category %>.jpg');"></div>
       <div class="category-card-top">
         <h2><%= category %></h2>
         <p><%= category.length %></p>

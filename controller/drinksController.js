@@ -6,6 +6,7 @@ const newDrink = (req, res) => {
 }
 
 const createDrink = async (req, res) => {
+    req.body.label =  req.body.label.replace(' ', '-');
     await Drinks.create(req.body)
     res.redirect('/drinks/new')
 }

@@ -2,13 +2,15 @@
 <form action="/drinks/new" method="post">
     <h2>What kind of drink is it</h2>
     <select name="category" id="">
+        <option value="cocktails">cocktails</option>
         <option value="beer">beer</option>
         <option value="wine">wine</option>
-        <option value="cocktails">cocktails</option>
         <option value="mocktails">mocktails</option>
     </select>
     <h2>whats the name of the drink</h2>
-    <input name="label" type="text"> br
+    <input name="label" type="text"> <br>
+    <h2>ingreditent</h2>
+   <textarea name="content" id="" cols="30" rows="10"></textarea>
     <button type="submit">add drink</button>
 
 </form>

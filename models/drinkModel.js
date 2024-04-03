@@ -6,6 +6,7 @@ const drinkSchema = new Schema({
       type: String,
       enum: ['beer', 'wine', 'cocktails', 'mocktails']
     },
+    content: String,
     label: String,
     reviews: [{
       type: Schema.Types.ObjectId,

@@ -10,7 +10,7 @@
 
    <% drinks.forEach(drink => { %>
       <a href="/drinks/reviews/<%= drink._id %>" class="category-drink-card">
-         <div class="image"></div>
+       
          <h2><%= drink.label %></h2>
          <div class="sub-copy">reviews: <%= drink.reviews.length %></div>
       </a>
