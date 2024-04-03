@@ -10,6 +10,8 @@
   --text-100: #ffffff;
 }
 
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -24,8 +26,8 @@ a {
 }
 
 body {
-  background: white;
-  color: var(--text-500);
+  color: white;
+  background: var(--text-500);
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   display: flex;

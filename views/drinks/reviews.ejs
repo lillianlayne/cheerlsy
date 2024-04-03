@@ -41,11 +41,11 @@
   <% drink.reviews.forEach(review => { %>
     <div class="review-card">
         <div class="review-card_top">
-            <div class="user-info">avatar <span>username</span></div>
+            <div class="user-info"><img src="<%= review.userIcon %>" alt="icon" referrerpolicy="no-referrer"> <span><%= review.userName %></span></div>
             <%= review.restaurant %> / <%= review.city %>, <%= review.state %>
         </div>
         <div class="review-card_bottom">
-            <p>Trust fund tbh subway tile jawn, green juice PBR&B tousled bodega boys gentrify hoodie. Neutra knausgaard pinterest pour-over subway tile stumptown. Small batch blackbird spyplane marfa bushwick. Disrupt pug gentrify roof party.</p>
+            <p><%= review.comment %></p>
             <div class="review-card_scorecard">
                 <div class="scorecard-block">
                     <h3><%= review.taste %> <span>/5</span> </h3>
