@@ -13,10 +13,13 @@ const createDrink = async (req, res) => {
 
 const showReviews = async (req, res) => {
     const drink = await Drinks.findById(req.params.id).populate('reviews');
-    const getUserScore = getters.getUserScore
+    const getUserScore = getters.getUserScore;
+    const removeDash = (arg) => {
+        return arg.replace('-', ' ')
+    };
     
 
-    res.render('drinks/reviews', {drink, getUserScore})
+    res.render('drinks/reviews', {drink, removeDash, getUserScore})
 }
 
 
