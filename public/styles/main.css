@@ -1,1 +1,134 @@
-/*# sourceMappingURL=main.css.map */
+h1 {
+  font-family: tandelle, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 94px;
+  line-height: 102px;
+}
+
+h2 {
+  font-family: tandelle, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 28px;
+}
+
+.flx-row-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flx-row-sb, nav, .index-drinks-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.width-full {
+  width: 100%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.width-margin, .index-drinks-section, .main-hero {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.main-hero {
+  text-transform: uppercase;
+  background: lightblue;
+}
+.main-hero h1 {
+  width: 40%;
+}
+
+.index-drinks-section .card {
+  height: 450px;
+  width: 30%;
+  position: relative;
+}
+.index-drinks-section .card .image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+}
+
+.flx-row-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flx-row-sb, nav, .index-drinks-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.width-full {
+  width: 100%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.width-margin, .main-hero, .index-drinks-section {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background: #FCFBF6;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+nav {
+  width: 90%;
+  padding: 30px;
+}/*# sourceMappingURL=main.css.map */

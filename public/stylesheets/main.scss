@@ -1,0 +1,17 @@
+@import 'typography';
+@import 'index';
+@import 'mixins';
+
+$background: #FCFBF6;
+
+body {
+    background: $background;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+nav {
+    width: 90%;
+    @extend .flx-row-sb;
+    padding: 30px;
+}
