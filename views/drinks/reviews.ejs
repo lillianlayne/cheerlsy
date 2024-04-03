@@ -39,7 +39,43 @@
 
 <div class="reviews-container">
   <% drink.reviews.forEach(review => { %>
-    works
+    <div class="review-card">
+        <div class="review-card_top">
+            <div class="user-info">avatar <span>username</span></div>
+            <%= review.restaurant %> / <%= review.city %>, <%= review.state %>
+        </div>
+        <div class="review-card_bottom">
+            <p>Trust fund tbh subway tile jawn, green juice PBR&B tousled bodega boys gentrify hoodie. Neutra knausgaard pinterest pour-over subway tile stumptown. Small batch blackbird spyplane marfa bushwick. Disrupt pug gentrify roof party.</p>
+            <div class="review-card_scorecard">
+                <div class="scorecard-block">
+                    <h3><%= review.taste %> <span>/5</span> </h3>
+                    <div class="sub-title">taste</div>
+                </div>
+                
+                <div class="scorecard-block">
+                    <h3><%= review.presentation %> <span>/5</span> </h3>
+                    <div class="sub-title">presentation</div>
+                </div>
+                
+                <div class="scorecard-block">
+                    <h3><%= review.localVibe %> <span>/5</span> </h3>
+                    <div class="sub-title">locale vibe</div>
+                </div>
+                
+                <div class="scorecard-block">
+                    <h3><%= review.price %> <span>/5</span> </h3>
+                    <div class="sub-title">price</div>
+                </div>
+                
+                <div class="scorecard-block">
+                    <% const allScores = [review.taste, review.presentation, review.localVibe, review.price] %>
+                    <h3><%= getUserScore(allScores) %> <span>/5</span> </h3>
+                    <div class="sub-title">overall</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
   <% }) %>
 </div>
 

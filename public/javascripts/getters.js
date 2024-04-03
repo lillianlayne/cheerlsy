@@ -18,6 +18,16 @@ const getBgColor = (arg) => {
     return bgColor
 }
 
+const getUserScore = (array) => {
+     let sum = 0;
+     array.forEach(score => {
+        sum += score
+     });
+
+     let avg = sum / 4;
+     return avg
+}
+
 module.exports = {
-    getBgColor
+    getBgColor, getUserScore
 }

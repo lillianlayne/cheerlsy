@@ -44,3 +44,51 @@
     width: 100%;
     background: lightgrey;
 }
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 18px;
+    border-bottom: 1px solid black;
+    padding: 36px 0px;
+}
+
+.review-card_top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.review-card_bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.review-card_scorecard {
+   display: flex;
+
+   
+}
+
+.scorecard-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid black;
+    width: 100px;
+    justify-content: center;
+}
+
+.sub-title {
+    font-size: 10px;
+}
