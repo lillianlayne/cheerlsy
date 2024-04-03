@@ -11,7 +11,7 @@ const createDrink = async (req, res) => {
 }
 
 const showReviews = async (req, res) => {
-    const drink = await Drinks.findById(req.params.id);
+    const drink = await Drinks.findById(req.params.id).populate('reviews');
     res.render('drinks/reviews', {drink})
 }
 

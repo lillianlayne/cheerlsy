@@ -37,3 +37,10 @@
     padding: 18px 0;
 }
 
+.drink-banner {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    background: lightgrey;
+}

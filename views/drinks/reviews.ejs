@@ -36,6 +36,11 @@
     <div class="subtitle">see what the people are saying</div>
     <div class="filters">filters</div>
 </div>
-<%= drink %> <br>
-<%= drink.reviews.length %>
+
+<div class="reviews-container">
+  <% drink.reviews.forEach(review => { %>
+    works
+  <% }) %>
+</div>
+
 <%- include('../partials/footer') %>
