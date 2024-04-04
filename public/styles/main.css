@@ -860,10 +860,9 @@ p {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 22px;
 }
 .drink-details .btn-primary, .drink-details .main-hero a, .main-hero .drink-details a {
-  border: 1px solid #e65819;
+  border: 2px solid #e65819;
   margin-top: 54px;
   color: #e65819;
 }
@@ -877,12 +876,6 @@ p {
   width: 1280px;
   margin: 0 auto;
   padding: 24px 0px;
-}
-.drink-banner .container .subtitle {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.2em;
 }
 
 .form-container {
@@ -1252,9 +1245,6 @@ p {
 .review-card_bottom {
   width: 100%;
 }
-.review-card_bottom p {
-  width: 40%;
-}
 .review-card_scorecard {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1277,19 +1267,6 @@ p {
 }
 .review-card .user-info .date {
   color: #a59286;
-}
-
-.restaurant-label {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 20px;
-  text-transform: capitalize;
-}
-.restaurant-label img {
-  height: 20px;
-  color: #a59286;
-  transform: rotate(45deg);
 }
 
 .scorecard-block {
