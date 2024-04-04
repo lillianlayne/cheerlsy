@@ -1,3 +1,37 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 h1 {
   font-family: tandelle, sans-serif;
   font-weight: 400;
@@ -14,13 +48,13 @@ h2 {
   line-height: 28px;
 }
 
-.flx-row-start {
+.flx-row-start, nav .categories, nav .user {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .index-drinks-section {
+.flx-row-sb, nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,42 +85,18 @@ h2 {
   margin: 0 auto;
 }
 
-.width-margin, .index-drinks-section, .main-hero {
+.width-margin {
   width: 1280px;
   margin: 0 auto;
 }
 
-.main-hero {
-  text-transform: uppercase;
-  background: lightblue;
-}
-.main-hero h1 {
-  width: 40%;
-}
-
-.index-drinks-section .card {
-  height: 450px;
-  width: 30%;
-  position: relative;
-}
-.index-drinks-section .card .image {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -99;
-}
-
-.flx-row-start {
+.flx-row-start, nav .categories, nav .user {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .index-drinks-section {
+.flx-row-sb, nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,18 +127,43 @@ h2 {
   margin: 0 auto;
 }
 
-.width-margin, .main-hero, .index-drinks-section {
+.width-margin {
   width: 1280px;
   margin: 0 auto;
 }
 
 body {
-  background: #FCFBF6;
+  background: #F2EDE2;
   height: 100vh;
   margin: 0 auto;
 }
 
 nav {
-  width: 90%;
-  padding: 30px;
+  width: 100%;
+  padding: 0px 30px;
+  position: fixed;
+}
+nav a {
+  color: #E65819;
+}
+nav .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+nav .categories, nav .user {
+  gap: 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+nav .cateegories:hover {
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */

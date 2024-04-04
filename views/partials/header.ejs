@@ -9,16 +9,27 @@
   </head>
   <body>
  <nav>
+
+<div class="categories">
+  <a href="/categories/drinks/beer">beer</a>
+  <a href="/categories/drinks/cocktails">cocktails</a>
+  <a href="/categories/drinks/wine">wine</a>
+</div>
+
+
     <a href="/" class="logo">cheersly</a>
+    <div class="user">
+
+      <a href="/">
+        <% if (user) { %>
+         <a href="/logout">logout</a>
+  
+         <% } else { %>
+          <a href="/auth/google" class="login">login</a>
+  
+  
+        <% } %>
+      </a>
+    </div>
     <a href="/drinks/new" style="display: none;">add drink</a>
-    <a href="/">
-      <% if (user) { %>
-       <a href="/logout">logout</a>
-
-       <% } else { %>
-        <a href="/auth/google" class="login">login</a>
-
-
-      <% } %>
-    </a>
  </nav>
