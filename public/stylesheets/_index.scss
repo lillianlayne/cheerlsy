@@ -1,2 +1,115 @@
-@import 'mixins';
+@import "mixins";
+@import 'typography';
 
+.main-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 80vh;
+  
+
+  .image {
+    background-image: url("../images/bettybuzz-spritz.gif");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 46px 46px 120px 46px;
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    .logo {
+      font-size: 64px !important;
+    }
+  }
+
+  a {
+    @extend .btn-primary;
+    margin-top: 54px;
+    background-color: $bg-300;
+    color: white;
+
+    &:hover {
+        background-color: transparent;
+        color: $bg-300;
+        border: 2px solid $bg-300;
+    }
+  }
+}
+
+
+  .banner {
+    width: 100%;
+    overflow: hidden;
+    background: $bg-200;
+    color: $bg-100;
+  
+    .container {
+        
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        transform: scale(4.5);
+
+        .label{
+            font-family: Inter, sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: .2em;
+        }
+    }
+}
+
+.index-drinks-section {
+    display: flex;
+    flex-direction: column;
+    margin: 34px auto;
+    width: 1280px;
+    
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        margin-bottom: 54px;
+        
+        .card {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .image {
+                width: 100%;
+                height: 90%;
+                background-size: cover;
+            }
+
+            .card-details {
+                @extend .flx-row-sb;
+                color: $text-100;
+                text-transform: uppercase;
+
+                img {
+                    height: 20px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

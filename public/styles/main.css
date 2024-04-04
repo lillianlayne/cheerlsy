@@ -1,3 +1,7 @@
+@import url("https://use.typekit.net/rih3pbi.css");
+@import url("https://use.typekit.net/rih3pbi.css");
+@import url("https://use.typekit.net/rih3pbi.css");
+@import url("https://use.typekit.net/rih3pbi.css");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -33,28 +37,69 @@ table {
 }
 
 h1 {
-  font-family: tandelle, sans-serif;
-  font-weight: 400;
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
   font-style: normal;
   font-size: 94px;
   line-height: 102px;
+  text-transform: capitalize;
 }
 
 h2 {
-  font-family: tandelle, sans-serif;
-  font-weight: 400;
+  font-family: inter, sans-serif;
+  font-weight: 300;
   font-style: normal;
-  font-size: 34px;
+  font-size: 28px;
+  letter-spacing: -0.1em;
   line-height: 28px;
+  margin: 0;
 }
 
-.flx-row-start, nav .categories, nav .user {
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 94px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+.flx-row-start, nav .categories,
+nav .user {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.flx-row-sb, nav {
+.flx-row-sb, nav, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,13 +135,187 @@ h2 {
   margin: 0 auto;
 }
 
-.flx-row-start, nav .categories, nav .user {
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #e65819;
+}
+
+.btn-primary, .main-hero a {
+  height: 80px;
+  width: 300px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 94px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+.main-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 80vh;
+}
+.main-hero .image {
+  background-image: url("../images/bettybuzz-spritz.gif");
+  background-size: cover;
+  background-position: top;
+}
+.main-hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 46px 46px 120px 46px;
+}
+.main-hero .content h1 {
+  margin-bottom: 12px;
+}
+.main-hero .content .logo {
+  font-size: 64px !important;
+}
+.main-hero a {
+  margin-top: 54px;
+  background-color: #b98a65;
+  color: white;
+}
+.main-hero a:hover {
+  background-color: transparent;
+  color: #b98a65;
+  border: 2px solid #b98a65;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  background: #eadab7;
+  color: #f2ede2;
+}
+.banner .container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  transform: scale(4.5);
+}
+.banner .container .label {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.index-drinks-section {
+  display: flex;
+  flex-direction: column;
+  margin: 34px auto;
+  width: 1280px;
+}
+.index-drinks-section h3 {
+  margin-bottom: 0;
+}
+.index-drinks-section .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 54px;
+}
+.index-drinks-section .container .card {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.index-drinks-section .container .card .image {
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+}
+.index-drinks-section .container .card .card-details {
+  color: #1c1917;
+  text-transform: uppercase;
+}
+.index-drinks-section .container .card .card-details img {
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 94px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+.flx-row-start, nav .categories,
+nav .user {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.flx-row-sb, nav {
+.flx-row-sb, nav, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,40 +349,66 @@ h2 {
 .width-margin {
   width: 1280px;
   margin: 0 auto;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #e65819;
+}
+
+.btn-primary, .main-hero a {
+  height: 80px;
+  width: 300px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2em;
 }
 
 body {
-  background: #F2EDE2;
+  background: #f2ede2;
   height: 100vh;
   margin: 0 auto;
 }
 
 nav {
   width: 100%;
-  padding: 0px 30px;
+  padding: 20px 30px;
   position: fixed;
+  z-index: 100;
+  background: #f2ede2;
 }
 nav a {
-  color: #E65819;
+  color: #e65819;
 }
 nav .logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.2em;
 }
-nav .categories, nav .user {
+nav .categories,
+nav .user {
   gap: 32px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   text-transform: lowercase;
   font-weight: 300;
 }
-nav .cateegories:hover {
+nav .categories:hover {
   font-style: italic;
+}
+
+.footer {
+  background: #eadab7;
+  height: 400px;
 }/*# sourceMappingURL=main.css.map */

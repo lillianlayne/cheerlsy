@@ -1,15 +1,36 @@
+@import url("https://use.typekit.net/rih3pbi.css");
+
+$bg-100: #f2ede2;
+$bg-200: #eadab7;
+$bg-300: #b98a65;
+$orange-100: #e65819;
+$text-100: #1c1917;
+$text-200: #44403c;
+
 h1 {
-  font-family: tandelle, sans-serif;
-  font-weight: 400;
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
   font-style: normal;
   font-size: 94px;
   line-height: 102px;
+  text-transform: capitalize;
 }
 
 h2 {
-  font-family: tandelle, sans-serif;
-  font-weight: 400;
+  font-family: inter, sans-serif;
+  font-weight: 300;
   font-style: normal;
-  font-size: 34px;
+  font-size: 28px;
+  letter-spacing: -.1em;
   line-height: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 102px;
+  text-transform: capitalize;
 }

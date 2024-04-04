@@ -1,29 +1,39 @@
 <%- include('./partials/header') %>
 
+<div class="main-hero">
+  <div class="image"></div>
+  <div class="content">
+    <h1>discover the <br />perfect pour with</h1>
+    <div class="logo">cheersly</div>
+    <a href="">view all drinks</a>
+  </div>
+</div>
 
-  <div class="main-hero">
-    <h1>discover the perfect pour with cheersly</h1>
+<div class="banner">
+  <div class="container">
+    <% drinks.forEach(drink => { %>
+    <p class="label"><%= drink.label.replace('-', ' ') %></p>
+    <% }) %>
   </div>
-  <div class="search-section">
-    <form action="" class="main-search">
-      <div class="main-search">
-        <input type="text" class="main-search-bar">
-        <button type="submit">Search</button>
-      </div>
-    </form>
+</div>
+
+<div class="index-drinks-section">
+  <h3>View by Categories</h3>
+  <div class="container">
+    <% allCategories.forEach(category => { %> <% const bgColor =
+    getBgColor(category) %>
+    <a href="/categories/drinks/<%= category %>" class="card">
+      <div
+        class="image"
+        style="background-image: url('/images/category-<%= category %>.jpg')"
+      ></div>
+      <div class="card-details">
+        <h2><%= category %></h2>
+        <img src="/images/arrow.svg" alt="">
+        </div>
+    </a>
+    <% }) %>
   </div>
-  
-  <div class="index-drinks-section">
-    <% allCategories.forEach(category => { %>
-      <% const bgColor = getBgColor(category) %>
-      <a href="/categories/drinks/<%= category %>"  class="card">
-        <div class="image" style="background-image: url('/images/category-<%= category %>.jpg');"></div>
-        <div class="card-details">
-          <h2><%= category %></h2>
-          <p><%= category.length %></p>
-        </div>      
-      </a>
-      <% }) %>
-    </div>
+  </div>
 
 <%- include('./partials/footer') %>
