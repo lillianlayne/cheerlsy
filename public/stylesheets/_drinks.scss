@@ -1,2 +1,66 @@
 @import "mixins";
-@import 'typography';
+@import "typography";
+
+.drink-reviews-header {
+  width: 100%;
+  padding: 100px 60px;
+  @extend .flx-row-sb;
+
+  .image {
+    aspect-ratio: 3/4;
+    width: 40%;
+    background-size: cover;
+    order: 2;
+  }
+}
+
+.drink-details {
+  @extend .flx-col;
+  width: 60%;
+  align-items: flex-start;
+
+  .review-overview {
+    width: 60%;
+    @extend .flx-col;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .review-row {
+      @extend .flx-row-sb;
+      width: 100%;
+      padding: 24px 0px;
+      border-bottom: 1px solid $text-200;
+
+      .review-score {
+        font-family: "ivypresto-display", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+    }
+  }
+
+  .btn-primary {
+    border: 2px solid $orange-100;
+    margin-top: 54px;
+    color: $orange-100;
+  }
+}
+
+.drink-banner {
+    width: 100%;
+    background: $bg-200;
+    color: $text-100;
+
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+        @extend .flx-row-sb;
+        padding: 24px 0px;
+    }
+}
+
+.reviews-container {
+    width: 1280px;
+    margin: 0 auto;
+    
+}
