@@ -23,6 +23,10 @@
   &_bottom {
     @extend .flx-row-sb;
     width: 100%;
+
+    p {
+      width: 40%;
+    }
   }
 
   &_scorecard {
@@ -43,13 +47,27 @@
     }
 
     .name {
-        font-weight: 500;
-        color: $text-400;
+      font-weight: 500;
+      color: $text-400;
     }
 
     .date {
-        color: $text-400;
+      color: $text-400;
     }
+  }
+}
+
+.restaurant-label {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: capitalize;
+
+  img {
+    height: 20px;
+    color: $text-400;
+    transform: rotate(45deg);
   }
 }
 
@@ -73,10 +91,10 @@
     }
 
     &:nth-child(5) {
-        h3 {
-            font-size: 32px;
-            font-weight: 300;
-        }
+      h3 {
+        font-size: 32px;
+        font-weight: 300;
+      }
     }
 
     .sub-title {

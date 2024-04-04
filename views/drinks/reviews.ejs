@@ -11,7 +11,7 @@
     <div class="review-overview">
       <div class="review-row">
         <p>overall score</p>
-        <div class="review-score">5/5</div>
+        <div class="review-score"><%= overallScore %></div>
       </div>
       <div class="review-row">
         <p>best city</p>
@@ -27,18 +27,16 @@
 </div>
 
 <div class="drink-banner">
-    <div class="container">
-        <div class="subtitle">see what the people are saying</div>
-        <div class="filters">filters</div>
-
-    </div>
+  <div class="container">
+    <p class="subtitle">see what the people are saying</p>
+    <p class="filters">filters</p>
+  </div>
 </div>
 
 <div class="reviews-container">
-    <% if (!drink.reviews.length) { %>
-     <h3>No Reviews yet...</h3>
-    <% } %>
-  <% drink.reviews.forEach(review => { %>
+  <% if (!drink.reviews.length) { %>
+  <h3>No Reviews yet...</h3>
+  <% } %> <% drink.reviews.forEach(review => { %>
   <div class="review-card">
     <div class="review-card_top">
       <div class="user-info">
@@ -48,11 +46,11 @@
           referrerpolicy="no-referrer"
         />
         <div class="user-date">
-          <p class="name"><%= review.userName %><p>
-           <p class="date"><%= getDate(review.createdAt) %></p>
+          <p class="name"><%= review.userName %></p>
+          <p></p>
+          <p class="date"><%= getDate(review.createdAt) %></p>
         </div>
       </div>
-      <%= review.restaurant %> / <%= review.city %>, <%= review.state %>
     </div>
     <div class="review-card_bottom">
       <p><%= review.comment %></p>
@@ -84,6 +82,10 @@
           <div class="sub-title">overall</div>
         </div>
       </div>
+    </div>
+    <div class="restaurant-label">
+      <%= review.restaurant %> / <%= review.city %>, <%= review.state %>
+      <img src="/images/arrow.svg" alt="" />
     </div>
   </div>
   <% }) %>

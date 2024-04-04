@@ -24,7 +24,7 @@ const getUserScore = (array) => {
         sum += score
      });
 
-     let avg = sum / 4;
+     let avg = sum / array.length;
      return avg
 }
 
@@ -34,6 +34,7 @@ const getDate = (arg) => {
     return array;
 
 }
+
 
 module.exports = {
     getBgColor, getUserScore, getDate
