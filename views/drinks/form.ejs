@@ -1,77 +1,184 @@
-<%- include('../partials/header') %>
-<%= drink %>
+<%- include('../partials/header') %> <%= drink %>
 
 <div class="form-container">
-    <div class="container">
+  <div class="container">
+    <div class="details">
+      <h3>Add A Review For the</h3>
+      <h2><%= drink.label.replace('-', ' ')%></h2>
+    </div>
 
+    <form
+      class="review-form"
+      action="/drinks/reviews/<%= drink._id %>"
+      method="post"
+    >
+      <input type="hidden" name="drinkId" value="<%= drink._id %>" />
 
-<div class="details">
-    <h3>Add A Review For</h2>
-    <h2><%= drink.label.replace('-', ' ')%></h2>
-</div>
-    
-    <form class="review-form" action="/drinks/reviews/<%= drink._id %>" method="post">
-        <input type="hidden" name="drinkId" value="<%= drink._id %>">
-        
+      <div class="row-1">
         <div class="star-rating">
-            <p><strong>Taste</strong><br>needs no explanation, but did it suck or not?</p>
-            <div class="rating">
-                <input value="5" name="taste" id="star5" type="radio"><label title="text" for="star5"></label>
-                <input value="4" name="taste" id="star4" type="radio"><label title="text" for="star4"></label>
-                <input value="3" name="taste" id="star3" type="radio"><label title="text" for="star3"></label>
-                <input value="2" name="taste" id="star2" type="radio"><label title="text" for="star2"></label>
-                <input value="1" name="taste" id="star1" type="radio"><label title="text" for="star1"></label>
-              </div>
-        </div>
-        <div class="star-rating">
-            <p><strong>Presentation</strong><br> if there was a dried piece of fruit on your drink, it's an automatic five stars.</p>
-            <div class="rating">
-                <input value="5" name="presentation" id="star15" type="radio"><label title="text" for="star15"></label>
-                <input value="4" name="presentation" id="star14" type="radio"><label title="text" for="star14"></label>
-                <input value="3" name="presentation" id="star13" type="radio"><label title="text" for="star13"></label>
-                <input value="2" name="presentation" id="star12" type="radio"><label title="text" for="star12"></label>
-                <input value="1" name="presentation" id="star11" type="radio"><label title="text" for="star11"></label>
-              </div>
-        </div>
-        <div class="star-rating">
-            <p><strong>Vibe Check</strong><br> what were the vibes of the restaurant like?</p>
-            <div class="rating">
-                <input value="5" name="loaclVibe" id="star25" type="radio"><label title="text" for="star25"></label>
-                <input value="4" name="loaclVibe" id="star24" type="radio"><label title="text" for="star24"></label>
-                <input value="3" name="loaclVibe" id="star23" type="radio"><label title="text" for="star23"></label>
-                <input value="2" name="loaclVibe" id="star22" type="radio"><label title="text" for="star22"></label>
-                <input value="1" name="loaclVibe" id="star21" type="radio"><label title="text" for="star21"></label>
-              </div>
-        </div>
-        <div class="star-rating">
-            <p><strong>Price</strong><br> yah it was good, but was it what-you-paid-for good?</p>
-            <div class="rating">
-                <input value="5" name="price" id="star35" type="radio"><label title="text" for="star35"></label>
-                <input value="4" name="price" id="star34" type="radio"><label title="text" for="star34"></label>
-                <input value="3" name="price" id="star33" type="radio"><label title="text" for="star33"></label>
-                <input value="2" name="price" id="star32" type="radio"><label title="text" for="star32"></label>
-                <input value="1" name="price" id="star31" type="radio"><label title="text" for="star31"></label>
-              </div>
-        </div>
-        <div class="comment">
-            <p>leave a comment</p>
-            <textarea name="comment" id=""></textarea>
-        </div>
-        <div class="restaurant">
-            <p>Where'd you enjoy this drink?</p>
-            <input type="text" name="restaurant" id="" placeholder="enter bar or restaurant name">
-        </div>
-        <div class="locale">
-            <p>Where ya at?</p>
             <div>
-                <input type="text" name="city" id="" placeholder="city">
-                <input type="text" name="state" id="" placeholder="state">
+
+                <h4>taste</h4>
+                <p>Needs no explanation, but did it suck or not?
+                </p>
             </div>
-            <button type="submit">add review</button>
+          <div class="rating">
+            <input value="5" name="taste" id="star5" type="radio" /><label
+              title="text"
+              for="star5"
+            ></label>
+            <input value="4" name="taste" id="star4" type="radio" /><label
+              title="text"
+              for="star4"
+            ></label>
+            <input value="3" name="taste" id="star3" type="radio" /><label
+              title="text"
+              for="star3"
+            ></label>
+            <input value="2" name="taste" id="star2" type="radio" /><label
+              title="text"
+              for="star2"
+            ></label>
+            <input value="1" name="taste" id="star1" type="radio" /><label
+              title="text"
+              for="star1"
+            ></label>
+          </div>
         </div>
-        
-        
+        <div class="star-rating">
+            <div>
+
+                <h4>presentation</h4>
+                <p>
+                    I mean, it is important...
+                </p>
+            </div>
+          <div class="rating">
+            <input
+              value="5"
+              name="presentation"
+              id="star15"
+              type="radio"
+            /><label title="text" for="star15"></label>
+            <input
+              value="4"
+              name="presentation"
+              id="star14"
+              type="radio"
+            /><label title="text" for="star14"></label>
+            <input
+              value="3"
+              name="presentation"
+              id="star13"
+              type="radio"
+            /><label title="text" for="star13"></label>
+            <input
+              value="2"
+              name="presentation"
+              id="star12"
+              type="radio"
+            /><label title="text" for="star12"></label>
+            <input
+              value="1"
+              name="presentation"
+              id="star11"
+              type="radio"
+            /><label title="text" for="star11"></label>
+          </div>
+        </div>
+        <div class="star-rating">
+            <div>
+
+                <h4>Local Vibe</h4>
+                <p>
+                    what were the vibes of the bar or restaurant like?
+                </p>
+            </div>
+          <div class="rating">
+            <input value="5" name="loaclVibe" id="star25" type="radio" /><label
+              title="text"
+              for="star25"
+            ></label>
+            <input value="4" name="loaclVibe" id="star24" type="radio" /><label
+              title="text"
+              for="star24"
+            ></label>
+            <input value="3" name="loaclVibe" id="star23" type="radio" /><label
+              title="text"
+              for="star23"
+            ></label>
+            <input value="2" name="loaclVibe" id="star22" type="radio" /><label
+              title="text"
+              for="star22"
+            ></label>
+            <input value="1" name="loaclVibe" id="star21" type="radio" /><label
+              title="text"
+              for="star21"
+            ></label>
+          </div>
+        </div>
+        <div class="star-rating">
+            <div>
+
+                <h4>price</h4>
+                <p>
+                    1 star: not worth it, 5 stars: totally worth it
+                </p>
+            </div>
+          <div class="rating">
+            <input value="5" name="price" id="star35" type="radio" /><label
+              title="text"
+              for="star35"
+            ></label>
+            <input value="4" name="price" id="star34" type="radio" /><label
+              title="text"
+              for="star34"
+            ></label>
+            <input value="3" name="price" id="star33" type="radio" /><label
+              title="text"
+              for="star33"
+            ></label>
+            <input value="2" name="price" id="star32" type="radio" /><label
+              title="text"
+              for="star32"
+            ></label>
+            <input value="1" name="price" id="star31" type="radio" /><label
+              title="text"
+              for="star31"
+            ></label>
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="comment">
+          <h4>What else do you have to say?</h4>
+          <textarea name="comment" id="" class="border"></textarea>
+        </div>
+        <div class="column">
+
+            <div class="restaurant">
+                <h4>Bar or Restaurant Name</h4>
+                <input
+                type="text"
+                name="restaurant"
+                id=""
+                placeholder="bar or restaurant name"
+                class="border"
+                />
+            </div>
+            <div class="locale">
+                <h4>Where ya at?</h4>
+                <div>
+                    <input class="border" type="text" name="city" id="" placeholder="ex: Chattanooga" />
+                    <input type="text" class="border" name="state" placeholder="ex: TN" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <button class="btn-primary empty" type="submit">add review</button>
+
     </form>
+  </div>
 </div>
-</div>
-    <%- include('../partials/footer') %>
+<%- include('../partials/footer') %>
