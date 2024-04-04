@@ -2,8 +2,9 @@
 @import "typography";
 
 .drink-reviews-header {
-  width: 100%;
-  padding: 100px 60px;
+  width: 1280px;
+  padding: 100px 0;
+  margin: 0 auto;
   @extend .flx-row-sb;
 
   .image {
@@ -20,7 +21,7 @@
   align-items: flex-start;
 
   .review-overview {
-    width: 60%;
+    width: 70%;
     @extend .flx-col;
     justify-content: flex-start;
     align-items: flex-start;

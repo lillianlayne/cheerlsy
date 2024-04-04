@@ -47,7 +47,10 @@
           alt="icon"
           referrerpolicy="no-referrer"
         />
-        <span><%= review.userName %></span>
+        <div class="user-date">
+          <p class="name"><%= review.userName %><p>
+           <p class="date"><%= getDate(review.createdAt) %></p>
+        </div>
       </div>
       <%= review.restaurant %> / <%= review.city %>, <%= review.state %>
     </div>

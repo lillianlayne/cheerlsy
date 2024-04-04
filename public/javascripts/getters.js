@@ -28,6 +28,13 @@ const getUserScore = (array) => {
      return avg
 }
 
+const getDate = (arg) => {
+    array = Array.from(arg)
+    
+    return array;
+
+}
+
 module.exports = {
-    getBgColor, getUserScore
+    getBgColor, getUserScore, getDate
 }
