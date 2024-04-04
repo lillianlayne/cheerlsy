@@ -18,6 +18,7 @@ const indexRouter = require('./routes/index');
 const drinksRouter = require('./routes/drinks');
 const reviewsRouter = require('./routes/reviews');
 const categoriesRouter = require('./routes/categories');
+const restaurantRouter = require('./routes/restaurants');
 
 // live reload on npm run dev - for styling only
 const liveReloadServer = livereload.createServer();
@@ -58,6 +59,7 @@ app.use('/', indexRouter);
 app.use('/drinks', drinksRouter);
 app.use('/', reviewsRouter);
 app.use('/categories', categoriesRouter);
+app.use('/restaurant', restaurantRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

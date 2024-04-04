@@ -9,6 +9,8 @@
 @import url("https://use.typekit.net/rih3pbi.css");
 @import url("https://use.typekit.net/rih3pbi.css");
 @import url("https://use.typekit.net/rih3pbi.css");
+@import url("https://use.typekit.net/rih3pbi.css");
+@import url("https://use.typekit.net/rih3pbi.css");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -1316,6 +1318,174 @@ p {
   letter-spacing: 0.12em;
   margin-top: 6px;
   color: #b7a79d;
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 94px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin: 8px;
+  color: #f2ede2;
+}
+
+p {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.flx-row-start, nav .categories,
+nav .user {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flx-row-sb, nav, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .drink-reviews-header, .drink-details .review-overview .review-row, .drink-banner .container, .review-card_top, .review-card_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flx-col, .drink-details, .drink-details .review-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.width-full {
+  width: 100%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.width-margin {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #e65819;
+}
+
+.btn-primary, .main-hero a {
+  height: 80px;
+  width: 300px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 94px;
+  line-height: 102px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin: 8px;
+  color: #f2ede2;
+}
+
+p {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.restaurant-container {
+  padding: 154px;
 }
 
 body {

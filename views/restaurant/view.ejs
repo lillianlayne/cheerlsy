@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+
+<div class="restaurant-container">
+   <%= title %>
+   
+   <% drinks.forEach(drink => { %>
+    <div class="drink-container">
+        <%= drink %>
+    </div>
+   <% }) %>
+</div>
+
+<%- include('../partials/footer') %>
