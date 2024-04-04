@@ -794,14 +794,22 @@ p {
 }
 
 .form-container {
-  width: 1280px;
-  margin: 0 auto;
-  padding: 100px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #b98a65;
+  color: white;
 }
 .form-container h2 {
   text-transform: uppercase;
+}
+.form-container .container {
+  display: flex;
+  width: 1280px;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .review-form {
@@ -828,7 +836,7 @@ p {
 .rating:not(:checked) > label {
   cursor: pointer;
   font-size: 30px;
-  color: #666;
+  color: #f2ede2;
 }
 
 .rating:not(:checked) > label:before {
@@ -840,20 +848,29 @@ p {
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
-  color: #e58e09;
+  color: #e65819;
 }
 
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-  color: #ff9e0b;
+  color: #e65819;
 }
 
 .rating > input:checked ~ label {
-  color: #ffa723;
+  color: #e65819;
 }
 
 input[type=radio]:focus + label {
-  outline: 2px solid black;
+  outline: 2px solid transparent;
+}
+
+.comment {
+  width: 100%;
+  display: flex;
+}
+.comment textarea {
+  width: 100%;
+  height: 120px;
 }
 
 body {
