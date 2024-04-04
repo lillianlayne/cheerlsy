@@ -28,11 +28,6 @@ const getUserScore = (array) => {
      return avg
 }
 
-const addShadow = () => {
-    const nav = document.getElementById('nav');
-    nav.style.boxShadow = '4px 0px 13px rgba(0, 0, 0, .12)'
-}
-
 module.exports = {
-    getBgColor, getUserScore, addShadow
+    getBgColor, getUserScore
 }
