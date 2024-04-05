@@ -10,8 +10,8 @@ require('dotenv').config();
 require('./config/database');
 require('./config/passport');
 
-const livereload = require('livereload');
-const connectLiveReload = require('connect-livereload');
+// const livereload = require('livereload');
+// const connectLiveReload = require('connect-livereload');
 
 
 const indexRouter = require('./routes/index');
@@ -21,12 +21,12 @@ const categoriesRouter = require('./routes/categories');
 const restaurantRouter = require('./routes/restaurants');
 
 // live reload on npm run dev - for styling only
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh('/');
-  }, 100)
-})
+// const liveReloadServer = livereload.createServer();
+// liveReloadServer.server.once("connection", () => {
+//   setTimeout(() => {
+//     liveReloadServer.refresh('/');
+//   }, 100)
+// })
 
 var app = express();
 
