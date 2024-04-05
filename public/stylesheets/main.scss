@@ -27,8 +27,6 @@ nav {
   z-index: 100;
   a {
     color: $text-100;
-
- 
   }
 
   @media screen and (max-width: 728px) {
@@ -46,7 +44,6 @@ nav {
     }
   }
 
-  
   .categories,
   .user {
     @extend .flx-row-start;

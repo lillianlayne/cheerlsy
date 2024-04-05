@@ -9,7 +9,9 @@
   <a href="/drinks/reviews/<%= drink._id %>" class="card">
     <div
       class="image"
-      style="background-image: url('/images/<%= drink.category%>-<%= drink.label %>.jpg')"
+      style="
+        background-image: url('/images/<%= drink.category%>-<%= drink.label %>.jpg');
+      "
     ></div>
     <div class="content">
       <h2><%= drink.label.replace('-', ' ') %></h2>

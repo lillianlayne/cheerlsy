@@ -297,7 +297,7 @@ p {
   flex-direction: column;
   width: 100%;
   height: 80vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
   position: relative;
   justify-content: center;
 }
@@ -360,20 +360,20 @@ p {
 }
 .main-hero a {
   margin-top: 5vmin;
-  background: #4884C4;
+  background: #4884c4;
   color: white;
 }
 @media screen and (max-width: 728px) {
   .main-hero a {
     background-color: transparent;
-    background: #4884C4;
+    background: #4884c4;
     color: white;
     margin-top: 24px;
   }
 }
 .main-hero a:hover {
   background: white;
-  color: #4884C4;
+  color: #4884c4;
 }
 
 .banner {
@@ -1194,8 +1194,8 @@ p {
 }
 .drink-reviews-header .drink-details .btn-primary, .drink-reviews-header .drink-details .main-hero a, .main-hero .drink-reviews-header .drink-details a {
   width: 100%;
-  color: #4884C4;
-  border: 1px solid #4884C4;
+  color: #4884c4;
+  border: 1px solid #4884c4;
 }
 @media screen and (min-width: 728px) {
   .drink-reviews-header .drink-details .btn-primary, .drink-reviews-header .drink-details .main-hero a, .main-hero .drink-reviews-header .drink-details a {

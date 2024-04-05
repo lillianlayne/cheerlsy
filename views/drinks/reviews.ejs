@@ -4,7 +4,9 @@
   <h1><%= removeDash(drink.label) %></h1>
   <div
     class="image"
-    style="background-image: url('/images/<%=drink.category%>-<%=drink.label%>.jpg')"
+    style="
+      background-image: url('/images/<%=drink.category%>-<%=drink.label%>.jpg');
+    "
   ></div>
   <div class="drink-details">
     <div class="review-overview">
@@ -43,7 +45,9 @@
         <div class="user-date">
           <p class="name"><%= review.userName %></p>
           <p></p>
-          <p class="date" style="font-size: 14px;;"><%= review.createdAt.toUTCString() %></p>
+          <p class="date" style="font-size: 14px">
+            <%= review.createdAt.toUTCString() %>
+          </p>
         </div>
       </div>
     </div>
@@ -78,7 +82,9 @@
         </div>
       </div>
     </div>
-    <div class="restaurant"><%= review.restaurant %> / <%= review.city %>, <%= review.state %></div>
+    <div class="restaurant">
+      <%= review.restaurant %> / <%= review.city %>, <%= review.state %>
+    </div>
   </div>
   <% }) %>
 </div>

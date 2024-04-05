@@ -1,4 +1,4 @@
-<%- include('../partials/header') %> 
+<%- include('../partials/header') %>
 
 <div class="form-container">
   <div class="container">
@@ -16,12 +16,10 @@
 
       <div class="row-1">
         <div class="star-rating">
-            <div>
-
-                <h4>taste</h4>
-                <p>Needs no explanation, but did it suck or not?
-                </p>
-            </div>
+          <div>
+            <h4>taste</h4>
+            <p>Needs no explanation, but did it suck or not?</p>
+          </div>
           <div class="rating">
             <input value="5" name="taste" id="star5" type="radio" /><label
               title="text"
@@ -46,13 +44,10 @@
           </div>
         </div>
         <div class="star-rating">
-            <div>
-
-                <h4>presentation</h4>
-                <p>
-                    I mean, it is important...
-                </p>
-            </div>
+          <div>
+            <h4>presentation</h4>
+            <p>I mean, it is important...</p>
+          </div>
           <div class="rating">
             <input
               value="5"
@@ -87,13 +82,10 @@
           </div>
         </div>
         <div class="star-rating">
-            <div>
-
-                <h4>Local Vibe</h4>
-                <p>
-                    What were the vibes of the bar or restaurant like?
-                </p>
-            </div>
+          <div>
+            <h4>Local Vibe</h4>
+            <p>What were the vibes of the bar or restaurant like?</p>
+          </div>
           <div class="rating">
             <input value="5" name="localVibe" id="star25" type="radio" /><label
               title="text"
@@ -118,13 +110,10 @@
           </div>
         </div>
         <div class="star-rating">
-            <div>
-
-                <h4>price</h4>
-                <p>
-                    1 star: not worth it, 5 stars: totally worth it
-                </p>
-            </div>
+          <div>
+            <h4>price</h4>
+            <p>1 star: not worth it, 5 stars: totally worth it</p>
+          </div>
           <div class="rating">
             <input value="5" name="price" id="star35" type="radio" /><label
               title="text"
@@ -155,29 +144,40 @@
           <textarea name="comment" id="" class="border"></textarea>
         </div>
         <div class="column">
-
-            <div class="restaurant">
-                <h4>Bar or Restaurant Name</h4>
-                <input
+          <div class="restaurant">
+            <h4>Bar or Restaurant Name</h4>
+            <input
+              type="text"
+              name="restaurant"
+              id=""
+              placeholder="bar or restaurant name"
+              class="border"
+            />
+          </div>
+          <div class="locale">
+            <h4>Where ya at?</h4>
+            <div>
+              <input
+                class="border city"
                 type="text"
-                name="restaurant"
+                name="city"
                 id=""
-                placeholder="bar or restaurant name"
-                class="border"
-                />
+                placeholder="ex: Chattanooga"
+              />
+              <input
+                type="text"
+                class="border state"
+                name="state"
+                placeholder="ex: TN"
+                maxlength="2"
+                minlength="2"
+              />
             </div>
-            <div class="locale">
-                <h4>Where ya at?</h4>
-                <div>
-                    <input class="border city" type="text" name="city" id="" placeholder="ex: Chattanooga" />
-                    <input type="text" class="border state" name="state" placeholder="ex: TN" maxlength="2" minlength="2" />
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-            <button class="btn-primary empty" type="submit">add review</button>
-
+      <button class="btn-primary empty" type="submit">add review</button>
     </form>
   </div>
 </div>
