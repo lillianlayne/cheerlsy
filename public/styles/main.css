@@ -335,8 +335,8 @@ p {
   color: white;
 }
 .main-hero .content .container h2 {
-  line-height: 7vmin;
-  font-size: 8vmin !important;
+  line-height: 6vmin;
+  font-size: 6vmin !important;
 }
 @media screen and (max-width: 728px) {
   .main-hero .content {
