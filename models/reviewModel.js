@@ -15,33 +15,31 @@ const reviewSchema = new Schema({
       type: Number,
       min: 1,
       max: 5,
-      required: true
+      default: 3,
     }, 
     presentation: {
       type: Number,
       min: 1,
       max: 5,
-      required: true
+      default: 3,
     },
     localVibe: {
       type: Number,
       min: 1,
       max: 5,
-      required: true
+      default: 3,
     },
     price: {
       type: Number,
       min: 1,
       max: 5,
-      required: true
+      default: 3,
     },
     restaurant: {
       type: String,
-      required: true
     }, 
     city: {
       type: String,
-      required: true,
     }, 
     state: {
       type: String,
@@ -52,7 +50,6 @@ const reviewSchema = new Schema({
         'nm', 'ny', 'nc', 'nd', 'oh', 'ok', 'or', 'pa', 'ri', 'sc',
         'sd', 'tn', 'tx', 'ut', 'vt', 'va', 'wa', 'wv', 'wi', 'wy'
       ],
-      required: true,
     }
   },{
     timestamps: true
