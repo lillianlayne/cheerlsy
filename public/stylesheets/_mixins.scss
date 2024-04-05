@@ -48,12 +48,15 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2em;
-    color: $orange-100
+    color: $text-100;
+    @media screen and (max-width: 728px) {
+        font-size: 14px
+    }
   }
 
   .btn-primary {
-    height: 80px;
-    width: 300px;
+    height: 60px;
+    width: 275px;
     border-radius: 100px;
     display: flex;
     align-items: center;
@@ -63,6 +66,10 @@
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .2em;
+
+    @media screen and (max-width: 728px) {
+    height: 50px; 
+    }
   }
 
   

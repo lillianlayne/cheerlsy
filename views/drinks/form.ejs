@@ -1,9 +1,9 @@
-<%- include('../partials/header') %> <%= drink %>
+<%- include('../partials/header') %> 
 
 <div class="form-container">
   <div class="container">
     <div class="details">
-      <h3>Add A Review For the</h3>
+      <h4>Add A Review For the</h4>
       <h2><%= drink.label.replace('-', ' ')%></h2>
     </div>
 
@@ -91,7 +91,7 @@
 
                 <h4>Local Vibe</h4>
                 <p>
-                    what were the vibes of the bar or restaurant like?
+                    What were the vibes of the bar or restaurant like?
                 </p>
             </div>
           <div class="rating">
@@ -169,8 +169,8 @@
             <div class="locale">
                 <h4>Where ya at?</h4>
                 <div>
-                    <input class="border" type="text" name="city" id="" placeholder="ex: Chattanooga" />
-                    <input type="text" class="border" name="state" placeholder="ex: TN" />
+                    <input class="border city" type="text" name="city" id="" placeholder="ex: Chattanooga" />
+                    <input type="text" class="border state" name="state" placeholder="ex: TN" maxlength="2" minlength="2" />
                 </div>
             </div>
         </div>

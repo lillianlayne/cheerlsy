@@ -1,51 +1,68 @@
 @import "mixins";
-@import 'typography';
+@import "typography";
 
 .category-main-title {
-    width: 1280px;
-    margin: 0 auto;
-    height: 100px;
-    padding: 120px 0px;
-    border-bottom: 1px solid $text-200;
+  width: 1280px;
+  margin: 0 auto;
+  height: 100px;
+  padding: 120px 0px;
+  border-bottom: 1px solid $text-200;
 
-    p {
-        text-transform: uppercase;
-    }
-    
+  @media screen and (max-width: 728px) {
+    width: 90%;
+    padding: 100px 0;
+    margin: 0 auto;
+  }
+
+  p {
+    text-transform: uppercase;
+  }
 }
 
 .category-drink-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 1280px;
-    margin: 54px auto;
-    gap: 24px;
-    
-    .card {
-        margin-bottom: 34px;
-        color: $text-100;
-        
-.content {
-    margin-top: 4px;
-    @extend .flx-row-sb;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1280px;
+  margin: 54px auto;
+  gap: 24px;
 
-    h2 {
-        text-transform: uppercase;
+  @media screen and (max-width: 728px) {
+    width: 90%;
+    margin: 12[x] auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20;
+  }
+
+  .card {
+    margin-bottom: 34px;
+    color: $text-100;
+
+    @media screen and (max-width: 728px) {
+    margin-bottom: 20px;     
     }
 
-    img {
+    .content {
+      margin-top: 4px;
+      @extend .flx-row-sb;
+
+      h2 {
+        text-transform: uppercase;
+      }
+
+      img {
         height: 20px;
         transform: rotate(45deg);
-    }
-}
-
-        .image {
-            width: 100%;
-            height: 400px;
-            background-size: cover;
-        }
-
+      }
     }
 
-
+    .image {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      @media screen and (max-width: 728px) {
+        height: 250px;
+        background-position: center;
+      }
+    }
+  }
 }

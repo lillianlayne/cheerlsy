@@ -3,8 +3,8 @@
 <div class="main-hero">
   <div class="image"></div>
   <div class="content">
-    <h1>discover the <br />perfect pour with</h1>
-    <div class="logo">cheersly</div>
+    <h1>discover the <br />perfect pour with <br>cheersly</h1>
+  
     <a href="">view all drinks</a>
   </div>
 </div>
@@ -12,7 +12,7 @@
 <div class="banner">
   <div class="container">
     <% drinks.forEach(drink => { %>
-    <p class="label"><%= drink.label.replace('-', ' ') %></p>
+    <div class="label"><%= drink.label.replace('-', ' ') %></div>
     <% }) %>
   </div>
 </div>

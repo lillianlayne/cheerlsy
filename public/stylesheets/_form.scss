@@ -1,0 +1,201 @@
+@import "mixins";
+@import "typography";
+
+.form-container {
+  width: 100%;
+  background: $bg-300;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    @media screen and (min-width: 728px) {
+      width: 1280px;
+      margin: 0 auto;
+    }
+    .details {
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+    }
+
+    .row-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      @media screen and (min-width: 728px) {
+        flex-direction: row;
+      }
+      .star-rating {
+        color: $bg-300;
+        background: $bg-100;
+        padding: 12px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        div:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          width: 100%;
+
+          p {
+            font-size: 12px;
+
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .review-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .btn-primary {
+            border: 1px solid $bg-100;
+            background: $bg-300;
+            color: $bg-100;
+            width: 100%;
+            margin-top: 20px;
+
+        }
+    }
+
+    .row-2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+
+      .comment {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+          background: $bg-100;
+          border: none;
+          border-radius: 8px;
+          height: 150px;
+          font-size: 14px;
+          font-family: Inter, sans-serif;
+          color: $text-100;
+          padding: 10px;
+        }
+      }
+
+      .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .restaurant {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .locale {
+          div {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            gap: 8px;
+            
+
+            .city {
+              width: 75%;
+            }
+
+            .state {
+              width: 25%;
+            }
+          }
+        }
+        input[type="text"] {
+          background: $bg-100;
+          border: none;
+          border-radius: 8px;
+          height: 0px;
+          font-size: 14px;
+          font-family: Inter, sans-serif;
+          color: $text-100;
+          padding: 10px;
+          height: 40px;
+
+          &::placeholder {
+            color: $text-500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.star-rating {
+  position: relative;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+}
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+.rating:not(:checked) > label {
+  cursor: pointer;
+  font-size: 30px;
+  color: $bg-100;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: $bg-300;
+}
+
+.rating:not(:checked) > label:before {
+  content: "\2605";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: goldenrod;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: goldenrod;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: goldenrod;
+}
+
+.rating > input:checked ~ label {
+  color: goldenrod;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: goldenrod;
+}
+
+input[type="radio"]:focus + label {
+  outline: 2px solid transparent;
+}
+
+.border {
+    outline: none;
+    border-color: none;
+}

@@ -11,47 +11,19 @@
 @import url("https://use.typekit.net/rih3pbi.css");
 @import url("https://use.typekit.net/rih3pbi.css");
 @import url("https://use.typekit.net/rih3pbi.css");
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-footer, header, nav, section, main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -61,7 +33,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -71,7 +48,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -81,8 +63,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -91,16 +76,21 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -110,7 +100,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -120,7 +115,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -130,8 +130,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -140,7 +143,6 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .flx-row-start, nav .categories,
@@ -150,7 +152,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_bottom, .review-card_top, .drink-banner .container, .drink-details .review-overview .review-row, .drink-reviews-header, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
+.flx-row-sb, nav, .review-card_top, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +171,7 @@ nav .user {
   align-items: baseline;
 }
 
-.flx-col, .drink-details .review-overview, .drink-details {
+.flx-col {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,12 +194,17 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #e65819;
+  color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .logo {
+    font-size: 14px;
+  }
 }
 
 .btn-primary, .main-hero a {
-  height: 80px;
-  width: 300px;
+  height: 60px;
+  width: 275px;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -208,14 +215,25 @@ nav .user {
   font-weight: 500;
   letter-spacing: 0.2em;
 }
+@media screen and (max-width: 728px) {
+  .btn-primary, .main-hero a {
+    height: 50px;
+  }
+}
 
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -225,7 +243,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -235,7 +258,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -245,8 +273,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -255,7 +286,6 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .main-hero {
@@ -264,10 +294,24 @@ p {
   width: 100%;
   height: 80vh;
 }
+@media screen and (max-width: 728px) {
+  .main-hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+  }
+}
 .main-hero .image {
   background-image: url("../images/bettybuzz-spritz.gif");
   background-size: cover;
   background-position: top;
+}
+@media screen and (max-width: 728px) {
+  .main-hero .image {
+    height: 80%;
+    background-position: top;
+  }
 }
 .main-hero .content {
   display: flex;
@@ -276,43 +320,61 @@ p {
   justify-content: flex-end;
   padding: 46px 46px 120px 46px;
 }
+@media screen and (max-width: 728px) {
+  .main-hero .content {
+    padding: 30px;
+    display: inline-block;
+  }
+}
 .main-hero .content h1 {
   margin-bottom: 12px;
 }
 .main-hero .content .logo {
-  font-size: 64px !important;
+  font-size: 50px !important;
+}
+@media screen and (max-width: 728px) {
+  .main-hero .content .logo {
+    font-size: 32px !important;
+  }
 }
 .main-hero a {
   margin-top: 54px;
-  background-color: #b98a65;
-  color: white;
+  background-color: transparent;
+  color: #e65819;
+  border: 1px solid #e65819;
+}
+@media screen and (max-width: 728px) {
+  .main-hero a {
+    background-color: transparent;
+    color: #e65819;
+    border: 1px solid #e65819;
+    margin-top: 24px;
+  }
 }
 .main-hero a:hover {
-  background-color: transparent;
-  color: #b98a65;
-  border: 2px solid #b98a65;
+  background-color: #e65819;
+  color: #f2ede2;
 }
 
 .banner {
   width: 100%;
-  overflow: hidden;
-  background: #eadab7;
+  overflow: scroll;
+  background: #513420;
   color: #f2ede2;
 }
 .banner .container {
-  height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  text-wrap: nowrap;
+  height: 40px;
   align-items: center;
-  gap: 32px;
-  transform: scale(4.5);
 }
 .banner .container .label {
   font-family: Inter, sans-serif;
-  font-size: 24px;
+  font-weight: 100;
+  font-size: 60px;
   text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0.2em;
+  margin-left: 40px;
 }
 
 .index-drinks-section {
@@ -320,6 +382,13 @@ p {
   flex-direction: column;
   margin: 34px auto;
   width: 1280px;
+  gap: 24px;
+}
+@media screen and (max-width: 728px) {
+  .index-drinks-section {
+    width: 90%;
+    gap: 20px;
+  }
 }
 .index-drinks-section .container {
   width: 100%;
@@ -328,6 +397,12 @@ p {
   gap: 22px;
   margin-bottom: 54px;
 }
+@media screen and (max-width: 728px) {
+  .index-drinks-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .index-drinks-section .container .card {
   width: 100%;
   height: 600px;
@@ -335,10 +410,20 @@ p {
   flex-direction: column;
   gap: 4px;
 }
+@media screen and (max-width: 728px) {
+  .index-drinks-section .container .card {
+    height: 300px;
+  }
+}
 .index-drinks-section .container .card .image {
   width: 100%;
   height: 90%;
   background-size: cover;
+}
+@media screen and (max-width: 728px) {
+  .index-drinks-section .container .card .image {
+    background-position: center;
+  }
 }
 .index-drinks-section .container .card .card-details {
   color: #513420;
@@ -353,9 +438,15 @@ h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -365,7 +456,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -375,7 +471,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -385,8 +486,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -395,7 +499,6 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .flx-row-start, nav .categories,
@@ -405,7 +508,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_bottom, .review-card_top, .drink-banner .container, .drink-details .review-overview .review-row, .drink-reviews-header, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
+.flx-row-sb, nav, .review-card_top, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -424,7 +527,7 @@ nav .user {
   align-items: baseline;
 }
 
-.flx-col, .drink-details .review-overview, .drink-details {
+.flx-col {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -447,12 +550,17 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #e65819;
+  color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .logo {
+    font-size: 14px;
+  }
 }
 
 .btn-primary, .main-hero a {
-  height: 80px;
-  width: 300px;
+  height: 60px;
+  width: 275px;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -463,14 +571,25 @@ nav .user {
   font-weight: 500;
   letter-spacing: 0.2em;
 }
+@media screen and (max-width: 728px) {
+  .btn-primary, .main-hero a {
+    height: 50px;
+  }
+}
 
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -480,7 +599,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -490,7 +614,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -500,8 +629,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -510,7 +642,6 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .flx-row-start, nav .categories,
@@ -520,7 +651,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_bottom, .review-card_top, .drink-banner .container, .drink-details .review-overview .review-row, .drink-reviews-header, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
+.flx-row-sb, nav, .review-card_top, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -539,7 +670,7 @@ nav .user {
   align-items: baseline;
 }
 
-.flx-col, .drink-details .review-overview, .drink-details {
+.flx-col {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -562,12 +693,17 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #e65819;
+  color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .logo {
+    font-size: 14px;
+  }
 }
 
 .btn-primary, .main-hero a {
-  height: 80px;
-  width: 300px;
+  height: 60px;
+  width: 275px;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -578,14 +714,25 @@ nav .user {
   font-weight: 500;
   letter-spacing: 0.2em;
 }
+@media screen and (max-width: 728px) {
+  .btn-primary, .main-hero a {
+    height: 50px;
+  }
+}
 
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -595,7 +742,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -605,7 +757,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -615,8 +772,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -625,7 +785,6 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .category-main-title {
@@ -634,6 +793,13 @@ p {
   height: 100px;
   padding: 120px 0px;
   border-bottom: 1px solid #826a5a;
+}
+@media screen and (max-width: 728px) {
+  .category-main-title {
+    width: 90%;
+    padding: 100px 0;
+    margin: 0 auto;
+  }
 }
 .category-main-title p {
   text-transform: uppercase;
@@ -646,9 +812,22 @@ p {
   margin: 54px auto;
   gap: 24px;
 }
+@media screen and (max-width: 728px) {
+  .category-drink-container {
+    width: 90%;
+    margin: 12 [x] auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20;
+  }
+}
 .category-drink-container .card {
   margin-bottom: 34px;
   color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .category-drink-container .card {
+    margin-bottom: 20px;
+  }
 }
 .category-drink-container .card .content {
   margin-top: 4px;
@@ -665,14 +844,26 @@ p {
   height: 400px;
   background-size: cover;
 }
+@media screen and (max-width: 728px) {
+  .category-drink-container .card .image {
+    height: 250px;
+    background-position: center;
+  }
+}
 
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -682,7 +873,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -692,7 +888,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -702,8 +903,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -712,7 +916,6 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .flx-row-start, nav .categories,
@@ -722,7 +925,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_bottom, .review-card_top, .drink-banner .container, .drink-details .review-overview .review-row, .drink-reviews-header, .index-drinks-section .container .card .card-details, .category-drink-container .card .content {
+.flx-row-sb, nav, .review-card_top, .index-drinks-section .container .card .card-details, .category-drink-container .card .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -741,7 +944,7 @@ nav .user {
   align-items: baseline;
 }
 
-.flx-col, .drink-details .review-overview, .drink-details {
+.flx-col {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -764,12 +967,17 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #e65819;
+  color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .logo {
+    font-size: 14px;
+  }
 }
 
 .btn-primary, .main-hero a {
-  height: 80px;
-  width: 300px;
+  height: 60px;
+  width: 275px;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -780,14 +988,25 @@ nav .user {
   font-weight: 500;
   letter-spacing: 0.2em;
 }
+@media screen and (max-width: 728px) {
+  .btn-primary, .main-hero a {
+    height: 50px;
+  }
+}
 
 h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
+  font-size: 72px;
+  line-height: 78px;
   text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -797,7 +1016,12 @@ h2 {
   font-size: 28px;
   letter-spacing: -0.1em;
   line-height: 28px;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 h3 {
@@ -807,7 +1031,12 @@ h3 {
   font-size: 42px;
   line-height: 54px;
   text-transform: capitalize;
-  margin: 0;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 h4 {
@@ -817,8 +1046,11 @@ h4 {
   font-size: 28px;
   line-height: 28px;
   text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 p {
@@ -827,161 +1059,659 @@ p {
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .drink-reviews-header {
-  width: 1280px;
-  padding: 100px 0;
+  height: 90vh;
   margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0 0 0;
+  gap: 12px;
 }
 .drink-reviews-header .image {
-  aspect-ratio: 3/4;
-  width: 40%;
+  height: 60%;
   background-size: cover;
-  order: 2;
+  background-position: center;
+  width: 100%;
+  border-radius: 16px;
+}
+.drink-reviews-header .drink-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.drink-reviews-header .drink-details .review-overview {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.drink-reviews-header .drink-details .review-overview .review-row p {
+  font-size: 14px;
+}
+.drink-reviews-header .drink-details .review-overview .review-row:nth-child(2) {
+  text-align: right;
+}
+.drink-reviews-header .drink-details .btn-primary, .drink-reviews-header .drink-details .main-hero a, .main-hero .drink-reviews-header .drink-details a {
+  width: 100%;
+  color: #e65819;
+  border: 1px solid #e65819;
 }
 
-.drink-details {
-  width: 60%;
-  align-items: flex-start;
+.reviews-container {
+  width: 90%;
+  margin: 0 auto;
 }
-.drink-details .review-overview {
-  width: 70%;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.drink-details .review-overview .review-row {
+.reviews-container .review-card {
   width: 100%;
-  padding: 24px 0px;
-  border-bottom: 1px solid #826a5a;
 }
-.drink-details .review-overview .review-row .review-score {
+
+h1 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: normal;
+  font-size: 72px;
+  line-height: 78px;
+  text-transform: capitalize;
 }
-.drink-details .btn-primary, .drink-details .main-hero a, .main-hero .drink-details a {
-  border: 2px solid #e65819;
-  margin-top: 54px;
-  color: #e65819;
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
 }
 
-.drink-banner {
-  width: 100%;
-  background: #eadab7;
-  color: #513420;
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
 }
-.drink-banner .container {
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.flx-row-start, nav .categories,
+nav .user {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flx-row-sb, nav, .review-card_top, .index-drinks-section .container .card .card-details, .category-drink-container .card .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.width-full {
+  width: 100%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.width-margin {
   width: 1280px;
   margin: 0 auto;
-  padding: 24px 0px;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .logo {
+    font-size: 14px;
+  }
+}
+
+.btn-primary, .main-hero a {
+  height: 60px;
+  width: 275px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 728px) {
+  .btn-primary, .main-hero a {
+    height: 50px;
+  }
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 78px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 0px;
+  border-bottom: 1px solid #b7a79d;
+}
+.review-card_top .user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.review-card_top .user-info .user-date .name {
+  color: #947e70;
+  font-size: 12px;
+  font-weight: 500;
+}
+.review-card_top .user-info img {
+  height: 38px;
+  width: 38px;
+  border-radius: 100%;
+}
+.review-card_bottom p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.review-card_scorecard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 12px;
+  gap: 8px;
+}
+.review-card_scorecard .scorecard-block {
+  padding: 8px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.review-card_scorecard .scorecard-block h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+.review-card_scorecard .scorecard-block h3 span {
+  font-size: 12px;
+}
+.review-card_scorecard .scorecard-block .sub-title {
+  font-size: 8px;
+  font-family: Inter, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: #947e70;
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 78px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.flx-row-start, nav .categories,
+nav .user {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flx-row-sb, nav, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .review-card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flx-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flx-col-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.width-full {
+  width: 100%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.width-margin {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #513420;
+}
+@media screen and (max-width: 728px) {
+  .logo {
+    font-size: 14px;
+  }
+}
+
+.btn-primary, .main-hero a {
+  height: 60px;
+  width: 275px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 728px) {
+  .btn-primary, .main-hero a {
+    height: 50px;
+  }
+}
+
+h1 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 78px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+
+h2 {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: -0.1em;
+  line-height: 28px;
+}
+@media screen and (max-width: 728px) {
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+h3 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h4 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 728px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-family: inter, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .form-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: #b98a65;
-  color: white;
-}
-.form-container h2 {
-  text-transform: uppercase;
 }
 .form-container .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+@media screen and (min-width: 728px) {
+  .form-container .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+.form-container .container .details h2 {
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.form-container .container .row-1 {
   display: flex;
-  width: 1280px;
   flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 728px) {
+  .form-container .container .row-1 {
+    flex-direction: row;
+  }
+}
+.form-container .container .row-1 .star-rating {
+  color: #b98a65;
+  background: #f2ede2;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.form-container .container .row-1 .star-rating div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.form-container .container .row-1 .star-rating div:nth-child(1) p {
+  font-size: 12px;
+  width: 90%;
   margin: 0 auto;
 }
-.form-container .details {
+.form-container .container .review-form {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  flex-direction: column;
   gap: 12px;
 }
-.form-container .details h2 {
-  font-size: 44px;
-  font-style: italic;
-}
-
-.review-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 54px 0px;
-}
-.review-form .row-1 {
-  display: flex;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  height: 200px;
-}
-.review-form .row-1 p {
+.form-container .container .review-form .btn-primary, .form-container .container .review-form .main-hero a, .main-hero .form-container .container .review-form a {
+  border: 1px solid #f2ede2;
+  background: #b98a65;
   color: #f2ede2;
-}
-.review-form .row-1 .star-rating {
-  background: rgba(255, 255, 255, 0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  padding: 30px 20px;
-  gap: 20px;
-  border-radius: 16px;
-}
-.review-form .row-1 .star-rating h3 {
-  line-height: 32px;
-  margin-bottom: 12px;
-}
-.review-form .row-2 {
-  display: flex;
-  gap: 20px;
-}
-.review-form .row-2 .column {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.review-form .row-2 .column input {
   width: 100%;
-  background: none;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  height: 60px;
-  padding: 10px;
-}
-.review-form .row-2 .column .locale {
   margin-top: 20px;
 }
-.review-form .row-2 .column .locale div {
+.form-container .container .row-2 {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
 }
-.review-form .row-2 .column .locale div input[name=city] {
+.form-container .container .row-2 .comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-container .container .row-2 .comment textarea {
+  background: #f2ede2;
+  border: none;
+  border-radius: 8px;
+  height: 150px;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  color: #513420;
+  padding: 10px;
+}
+.form-container .container .row-2 .column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-container .container .row-2 .column .restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-container .container .row-2 .column .locale div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+}
+.form-container .container .row-2 .column .locale div .city {
   width: 75%;
 }
-.review-form .row-2 .column .locale div input[name=state] {
+.form-container .container .row-2 .column .locale div .state {
   width: 25%;
 }
-.review-form button {
-  margin: 0 auto;
-  width: 100%;
-  background: none;
-  border: 1px solid #eadab7;
-  color: #eadab7;
-  margin-top: 54px;
+.form-container .container .row-2 .column input[type=text] {
+  background: #f2ede2;
+  border: none;
+  border-radius: 8px;
+  height: 0px;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  color: #513420;
+  padding: 10px;
+  height: 40px;
+}
+.form-container .container .row-2 .column input[type=text]::placeholder {
+  color: #b7a79d;
+}
+
+.star-rating {
+  position: relative;
 }
 
 .rating {
   display: flex;
   flex-direction: row-reverse;
-  gap: 10px;
+  gap: 12px;
 }
 
 .rating:not(:checked) > input {
@@ -993,6 +1723,8 @@ p {
   cursor: pointer;
   font-size: 30px;
   color: #f2ede2;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #b98a65;
 }
 
 .rating:not(:checked) > label:before {
@@ -1004,465 +1736,29 @@ p {
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
-  color: #e65819;
+  color: goldenrod;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: goldenrod;
 }
 
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-  color: #e65819;
+  color: goldenrod;
 }
 
 .rating > input:checked ~ label {
-  color: #e65819;
+  color: goldenrod;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: goldenrod;
 }
 
 input[type=radio]:focus + label {
   outline: 2px solid transparent;
 }
 
-.comment {
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.comment h3 {
-  margin: 0;
-}
-.comment textarea {
-  width: 100%;
-  border: none;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.25);
-  height: 200px;
-  font-family: Inter, sans-serif;
-  font-size: 24px;
-  font-weight: 200;
-  color: white;
-  padding: 24px;
-}
-
-input[type=text] {
-  font-family: Inter, sans-serif;
-  font-size: 24px;
-  font-weight: 200;
-  color: white;
-}
-
-input::placeholder {
-  color: rgba(255, 255, 255, 0.25);
-}
-
 .border {
   outline: none;
-}
-
-.border {
   border-color: none;
-}
-
-h1 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
-  text-transform: capitalize;
-}
-
-h2 {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
-  margin: 0;
-}
-
-h3 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 42px;
-  line-height: 54px;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-h4 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 28px;
-  line-height: 28px;
-  text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
-}
-
-p {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0;
-}
-
-.flx-row-start, nav .categories,
-nav .user {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.flx-row-sb, nav, .review-card_bottom, .review-card_top, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .drink-reviews-header, .drink-details .review-overview .review-row, .drink-banner .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flx-row-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flx-col-sb {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.flx-col, .drink-details, .drink-details .review-overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.width-full {
-  width: 100%;
-  padding: 60px;
-  margin: 0 auto;
-}
-
-.width-margin {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-.logo {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: #e65819;
-}
-
-.btn-primary, .main-hero a {
-  height: 80px;
-  width: 300px;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: inter, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-}
-
-h1 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
-  text-transform: capitalize;
-}
-
-h2 {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
-  margin: 0;
-}
-
-h3 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 42px;
-  line-height: 54px;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-h4 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 28px;
-  line-height: 28px;
-  text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
-}
-
-p {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0;
-}
-
-.reviews-container {
-  display: flex;
-  width: 1280px;
-  flex-direction: column;
-  margin: 54px auto;
-}
-
-.review-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0px;
-  border-bottom: 1px solid #b7a79d;
-}
-.review-card_top {
-  width: 100%;
-}
-.review-card_bottom {
-  width: 100%;
-}
-.review-card_scorecard {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 50%;
-}
-.review-card .user-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.review-card .user-info img {
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-}
-.review-card .user-info .name {
-  font-weight: 500;
-  color: #a59286;
-}
-.review-card .user-info .date {
-  color: #a59286;
-}
-
-.scorecard-block {
-  border-left: 1px solid black;
-  padding: 12px;
-  text-align: center;
-}
-.scorecard-block span {
-  font-size: 18px;
-  color: #b7a79d;
-}
-.scorecard-block:nth-child(1) {
-  border-left: none;
-}
-.scorecard-block h3 {
-  font-size: 18px;
-}
-.scorecard-block:nth-child(5) h3 {
-  font-size: 32px;
-  font-weight: 300;
-}
-.scorecard-block .sub-title {
-  font-size: 10px;
-  font-family: Inter, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-top: 6px;
-  color: #b7a79d;
-}
-
-h1 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
-  text-transform: capitalize;
-}
-
-h2 {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
-  margin: 0;
-}
-
-h3 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 42px;
-  line-height: 54px;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-h4 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 28px;
-  line-height: 28px;
-  text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
-}
-
-p {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0;
-}
-
-.flx-row-start, nav .categories,
-nav .user {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.flx-row-sb, nav, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .drink-reviews-header, .drink-details .review-overview .review-row, .drink-banner .container, .review-card_top, .review-card_bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flx-row-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flx-col-sb {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.flx-col, .drink-details, .drink-details .review-overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.width-full {
-  width: 100%;
-  padding: 60px;
-  margin: 0 auto;
-}
-
-.width-margin {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-.logo {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: #e65819;
-}
-
-.btn-primary, .main-hero a {
-  height: 80px;
-  width: 300px;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: inter, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-}
-
-h1 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 94px;
-  line-height: 102px;
-  text-transform: capitalize;
-}
-
-h2 {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
-  margin: 0;
-}
-
-h3 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 42px;
-  line-height: 54px;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-h4 {
-  font-family: "ivypresto-display", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 28px;
-  line-height: 28px;
-  text-transform: capitalize;
-  margin: 8px;
-  color: #f2ede2;
-}
-
-p {
-  font-family: inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0;
-}
-
-.restaurant-container {
-  padding: 154px;
 }
 
 body {
@@ -1472,29 +1768,54 @@ body {
   color: #513420;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 nav {
   width: 100%;
   padding: 20px 30px;
   position: fixed;
   z-index: 100;
   background: #f2ede2;
+  border-bottom: 1px solid #513420;
+}
+@media screen and (max-width: 728px) {
+  nav {
+    padding: 10px 30px;
+  }
 }
 nav a {
-  color: #e65819;
+  color: #513420;
 }
-nav .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (min-width: 728px) {
+  nav .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 nav .categories,
 nav .user {
   gap: 32px;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: lowercase;
   font-weight: 300;
+}
+@media screen and (max-width: 728px) {
+  nav .categories,
+  nav .user {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 728px) {
+  nav .categories {
+    display: none;
+  }
 }
 nav .categories:hover {
   font-style: italic;

@@ -1,91 +1,69 @@
 @import "mixins";
 @import "typography";
 
-.reviews-container {
-  display: flex;
-  width: 1280px;
-  flex-direction: column;
-  margin: 54px auto;
-}
-
 .review-card {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 0px;
+  gap: 10px;
+  padding: 18px 0px;
   border-bottom: 1px solid $text-500;
 
   &_top {
     @extend .flx-row-sb;
-    width: 100%;
-  }
 
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      .user-date {
+        .name {
+          color: $text-300;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+      img {
+        height: 38px;
+        width: 38px;
+        border-radius: 100%;
+      }
+    }
+  }
+  
   &_bottom {
-    @extend .flx-row-sb;
-    width: 100%;
+    p {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
-
+  
   &_scorecard {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 50%;
-  }
-
-  .user-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    img {
-      height: 40px;
-      width: 40px;
-      border-radius: 20px;
-    }
-
-    .name {
-        font-weight: 500;
-        color: $text-400;
-    }
-
-    .date {
-        color: $text-400;
-    }
-  }
-}
-
-.scorecard {
-  &-block {
-    border-left: 1px solid black;
-    padding: 12px;
-    text-align: center;
-
-    span {
-      font-size: 18px;
-      color: $text-500;
-    }
-
-    &:nth-child(1) {
-      border-left: none;
-    }
-
-    h3 {
-      font-size: 18px;
-    }
-
-    &:nth-child(5) {
-        h3 {
-            font-size: 32px;
-            font-weight: 300;
+    margin-top: 12px;
+    gap: 8px;
+    .scorecard-block {
+      padding: 8px;
+      text-align: center;
+      background: rgba(255, 255, 255, .5);
+      border-radius: 8px;
+      h3 {
+        font-size: 18px;
+        font-weight: 300;
+        span {
+          font-size: 12px;
         }
+      }
+      .sub-title {
+        font-size: 8px;
+        font-family: Inter, sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        color: $text-300;
+      }
     }
 
-    .sub-title {
-      font-size: 10px;
-      font-family: Inter, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-top: 6px;
-      color: $text-500;
-    }
   }
 }
