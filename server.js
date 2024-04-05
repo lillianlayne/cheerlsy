@@ -30,7 +30,7 @@ liveReloadServer.server.once("connection", () => {
 
 var app = express();
 
-app.use(connectLiveReload());
+// app.use(connectLiveReload());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
