@@ -4,13 +4,13 @@
 .category-main-title {
   width: 1280px;
   margin: 0 auto;
-
   padding: 120px 0px 40px 0px;
   border-bottom: 1px solid $text-200;
 
   @media screen and (max-width: 728px) {
     width: 90%;
-    padding: 100px 0;
+    padding: 80px 0px 40px 0px;
+
     margin: 0 auto;
   }
 
@@ -43,7 +43,8 @@
     color: $text-100;
 
     @media screen and (max-width: 728px) {
-    margin-bottom: 20px;     
+    margin-bottom: 20px;  
+    width: 100%;   
     }
 
     .content {
@@ -67,7 +68,8 @@
       aspect-ratio: 1/1;
       background-size: cover;
       @media screen and (max-width: 728px) {
-        height: 250px;
+        width: 100%;
+        aspect-ratio: 1/1;
         background-position: center;
       }
     }

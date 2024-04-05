@@ -4,18 +4,18 @@
   <h1><%= removeDash(drink.label) %></h1>
   <div
     class="image"
-    style="background-image: url('/images/cocktail-<%=drink.label%>.jpg')"
+    style="background-image: url('/images/<%=drink.category%>-<%=drink.label%>.jpg')"
   ></div>
   <div class="drink-details">
     <div class="review-overview">
       <div class="review-row">
         <p>overall score</p>
-        <div class="review-score">5/5</div>
+        <div class="review-score"><%= overallScore %>/5</div>
       </div>
-      <div class="review-row">
+      <!-- <div class="review-row">
         <p>best state</p>
         <div class="review-score">Chattanooga, TN</div>
-      </div>
+      </div> -->
     </div>
     <a class="btn-primary" href="/drinks/form/<%= drink._id %>">add review</a>
   </div>

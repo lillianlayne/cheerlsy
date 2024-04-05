@@ -24,7 +24,7 @@ const getUserScore = (array) => {
         sum += score
      });
 
-     let avg = sum / 4;
+     let avg = sum / array.length;
      return avg
 }
 
@@ -35,6 +35,29 @@ const getDate = (arg) => {
 
 }
 
+const getBestState = (array) => {
+    const counter = {};
+    let max = 0;
+    let bestState;
+
+    for (let state of array) {
+        if (counter[state]) {
+            counter[word] ++;
+        }
+        else {
+            counter[word] = 1;
+        }
+        if (counter[word] > maxCount) {
+            maxCount = counter[word];
+            bestState = word
+        }
+    }
+
+
+    return bestState;
+}
+
+
 module.exports = {
-    getBgColor, getUserScore, getDate
+    getBgColor, getUserScore, getDate, getBestState
 }

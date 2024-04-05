@@ -7,6 +7,16 @@ const showCategory = async (req, res) => {
     res.render('categories/drinks', {drinks, catagory: title})
 }
 
+
+const showAll = async (req, res) => {
+    const drinks = await Drinks.find({});
+
+
+    res.render(
+        'categories/view-all', {drinks}
+    )
+}
 module.exports = {
-    show: showCategory
+    show: showCategory,
+    showAll
 }
