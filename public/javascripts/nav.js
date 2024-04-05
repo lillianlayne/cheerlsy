@@ -1,5 +1,5 @@
 const nav = document.getElementById('nav');
-const image = document.querySelectorAll('.ignore');
+const image = document.querySelectorAll('img');
 
 window.addEventListener('scroll', () => {
     if (isElementInViewport(image)) {
