@@ -418,6 +418,7 @@ p {
 @media screen and (max-width: 728px) {
   .index-drinks-section .container {
     gap: 12px;
+    height: fit-content;
   }
 }
 .index-drinks-section .container .card {

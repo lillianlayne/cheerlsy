@@ -15,10 +15,9 @@ Cheersly is an app that lets you review certain drinks based off taste, presenta
 * Google OAuth 
 * Node
 * Javascript
-* Tailwind
 
 ## View Cheersly
-Start using Cheersly here: [URL]
+Start using Cheersly here: [URL](https://cheersly-app-ee835d49a05e.herokuapp.com/)
 
 [Project management](https://trello.com/invite/b/ukUg8UXn/ATTI2d31fc5b916e9f3f71c559883366dafbE041AA64/unit-2-project) on Trello
 
