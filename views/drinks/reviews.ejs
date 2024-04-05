@@ -10,7 +10,7 @@
     <div class="review-overview">
       <div class="review-row">
         <p>overall score</p>
-        <div class="review-score"><%= overallScore %>/5</div>
+        <div class="review-score"><%= overallScore.toFixed(2) %>/5</div>
       </div>
       <!-- <div class="review-row">
         <p>best state</p>
@@ -43,7 +43,7 @@
         <div class="user-date">
           <p class="name"><%= review.userName %></p>
           <p></p>
-          <p class="date"><%= getDate(review.createdAt) %></p>
+          <p class="date" style="font-size: 14px;;"><%= review.createdAt.toUTCString() %></p>
         </div>
       </div>
     </div>
