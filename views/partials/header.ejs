@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#513420">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#513420" />
     <title>Cheersly</title>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="https://use.typekit.net/rih3pbi.css">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rih3pbi.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
     <script src="/javascripts/getters.js" defer></script>
   </head>
   <body>
- <nav>
+    <nav>
+      <div class="categories">
+        <a href="/categories/drinks/beer">beer</a>
+        <a href="/categories/drinks/cocktails">cocktails</a>
+        <a href="/categories/drinks/wine">wine</a>
+      </div>
 
-<div class="categories">
-  <a href="/categories/drinks/beer">beer</a>
-  <a href="/categories/drinks/cocktails">cocktails</a>
-  <a href="/categories/drinks/wine">wine</a>
-</div>
+      <a href="/" class="logo">cheersly</a>
+      <div class="user">
+        <a href="/">
+          <% if (user) { %>
+          <a href="/logout">logout</a>
 
-
-    <a href="/" class="logo">cheersly</a>
-    <div class="user">
-
-      <a href="/">
-        <% if (user) { %>
-         <a href="/logout">logout</a>
-  
-         <% } else { %>
+          <% } else { %>
           <a href="/auth/google" class="login">login</a>
-  
-  
-        <% } %>
-      </a>
-    </div>
-    <a href="/drinks/new" style="display: none;">add drink</a>
- </nav>
+
+          <% } %>
+        </a>
+      </div>
+      <a href="/drinks/new" style="display: none">add drink</a>
+    </nav>
+  </body>
+</html>

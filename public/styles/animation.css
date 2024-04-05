@@ -1,0 +1,15 @@
+.animation {
+    animation: scroll 30s linear infinite;
+}
+
+@media screen and (max-width: 728px) {
+    .animation {
+        animation: scroll 10s linear infinite
+    }
+}
+
+@keyframes scroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-100%)}
+}
+

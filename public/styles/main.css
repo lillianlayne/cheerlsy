@@ -12,7 +12,7 @@
 @import url("https://use.typekit.net/rih3pbi.css");
 @import url("https://use.typekit.net/rih3pbi.css");
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -30,9 +30,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -57,7 +57,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -79,7 +79,7 @@ p {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -97,9 +97,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -109,7 +109,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -124,7 +124,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -152,7 +152,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_top, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
+.flx-row-sb, .footer .container, nav, .review-card_top, .drink-banner .container, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +194,7 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #513420;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .logo {
@@ -222,7 +222,7 @@ nav .user {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -240,9 +240,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -252,7 +252,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -267,7 +267,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -289,27 +289,31 @@ p {
 }
 
 .main-hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 80vh;
-}
-@media screen and (max-width: 728px) {
-  .main-hero {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: flex-end;
-  }
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  justify-content: center;
 }
 .main-hero .image {
   background-image: url("../images/bettybuzz-spritz.gif");
   background-size: cover;
   background-position: top;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  z-index: -99;
+  background-position: 80% 20%;
 }
 @media screen and (max-width: 728px) {
   .main-hero .image {
-    height: 80%;
+    height: 100%;
     background-position: top;
   }
 }
@@ -317,48 +321,60 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
-  padding: 46px 46px 120px 46px;
+  justify-content: space-between;
+  height: 100%;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 10vmin 0 5vmin 0;
+}
+.main-hero .content .container {
+  color: white;
+}
+.main-hero .content .container h2 {
+  line-height: 7vmin;
+  font-size: 8vmin !important;
 }
 @media screen and (max-width: 728px) {
   .main-hero .content {
-    padding: 30px;
-    display: inline-block;
+    padding: 60px 30px;
+    width: 100%;
   }
 }
 .main-hero .content h1 {
   margin-bottom: 12px;
 }
 .main-hero .content .logo {
-  font-size: 50px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media screen and (max-width: 728px) {
-  .main-hero .content .logo {
-    font-size: 32px !important;
-  }
+.main-hero .content .logo svg {
+  color: #f2ede2;
+  width: 100%;
+  height: 30vmin;
 }
 .main-hero a {
-  margin-top: 54px;
-  background-color: transparent;
-  color: #e65819;
-  border: 1px solid #e65819;
+  margin-top: 5vmin;
+  background: #4884C4;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .main-hero a {
     background-color: transparent;
-    color: #e65819;
-    border: 1px solid #e65819;
+    background: #4884C4;
+    color: white;
     margin-top: 24px;
   }
 }
 .main-hero a:hover {
-  background-color: #e65819;
-  color: #f2ede2;
+  background: white;
+  color: #4884C4;
 }
 
 .banner {
   width: 100%;
-  overflow: scroll;
+  overflow: hidden;
   background: #513420;
   color: #f2ede2;
 }
@@ -381,7 +397,7 @@ p {
   display: flex;
   flex-direction: column;
   margin: 34px auto;
-  width: 1280px;
+  max-width: 1280px;
   gap: 24px;
 }
 @media screen and (max-width: 728px) {
@@ -392,10 +408,11 @@ p {
 }
 .index-drinks-section .container {
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  margin-bottom: 54px;
+  align-content: center;
 }
 @media screen and (max-width: 728px) {
   .index-drinks-section .container {
@@ -408,7 +425,8 @@ p {
   height: 600px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  justify-content: center;
+  gap: 24px;
 }
 @media screen and (max-width: 728px) {
   .index-drinks-section .container .card {
@@ -417,8 +435,9 @@ p {
 }
 .index-drinks-section .container .card .image {
   width: 100%;
-  height: 90%;
+  aspect-ratio: 1/1;
   background-size: cover;
+  border-radius: 16px;
 }
 @media screen and (max-width: 728px) {
   .index-drinks-section .container .card .image {
@@ -427,7 +446,8 @@ p {
 }
 .index-drinks-section .container .card .card-details {
   color: #513420;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  padding: 0px 8px;
 }
 .index-drinks-section .container .card .card-details img {
   height: 20px;
@@ -435,7 +455,7 @@ p {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -453,9 +473,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -465,7 +485,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -480,7 +500,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -508,7 +528,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_top, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
+.flx-row-sb, .footer .container, nav, .review-card_top, .drink-banner .container, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -550,7 +570,7 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #513420;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .logo {
@@ -578,7 +598,7 @@ nav .user {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -596,9 +616,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -608,7 +628,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -623,7 +643,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -651,7 +671,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_top, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
+.flx-row-sb, .footer .container, nav, .review-card_top, .drink-banner .container, .category-drink-container .card .content, .index-drinks-section .container .card .card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -693,7 +713,7 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #513420;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .logo {
@@ -721,7 +741,7 @@ nav .user {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -739,9 +759,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -751,7 +771,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -766,7 +786,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -790,8 +810,7 @@ p {
 .category-main-title {
   width: 1280px;
   margin: 0 auto;
-  height: 100px;
-  padding: 120px 0px;
+  padding: 120px 0px 40px 0px;
   border-bottom: 1px solid #826a5a;
 }
 @media screen and (max-width: 728px) {
@@ -801,7 +820,12 @@ p {
     margin: 0 auto;
   }
 }
+.category-main-title h2 {
+  font-size: 44px;
+}
 .category-main-title p {
+  font-size: 12px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -809,13 +833,13 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 1280px;
-  margin: 54px auto;
+  margin: 44px auto;
   gap: 24px;
 }
 @media screen and (max-width: 728px) {
   .category-drink-container {
     width: 90%;
-    margin: 12 [x] auto;
+    margin: 12px auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 20;
   }
@@ -841,7 +865,9 @@ p {
 }
 .category-drink-container .card .image {
   width: 100%;
-  height: 400px;
+  border-radius: 16px;
+  background-position: center;
+  aspect-ratio: 1/1;
   background-size: cover;
 }
 @media screen and (max-width: 728px) {
@@ -852,7 +878,7 @@ p {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -870,9 +896,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -882,7 +908,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -897,7 +923,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -925,7 +951,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_top, .index-drinks-section .container .card .card-details, .category-drink-container .card .content {
+.flx-row-sb, .footer .container, nav, .review-card_top, .drink-banner .container, .index-drinks-section .container .card .card-details, .category-drink-container .card .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -967,7 +993,7 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #513420;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .logo {
@@ -995,7 +1021,7 @@ nav .user {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -1013,9 +1039,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -1025,7 +1051,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -1040,7 +1066,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -1062,53 +1088,127 @@ p {
 }
 
 .drink-reviews-header {
-  height: 90vh;
   margin: 0 auto;
   width: 90%;
   display: flex;
   flex-direction: column;
-  padding: 64px 0 0 0;
+  padding: 84px 0 0 0;
   gap: 12px;
 }
+@media screen and (min-width: 728px) {
+  .drink-reviews-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 1280px;
+    height: 80vh;
+    gap: 30px;
+    padding: 84px 0 32px 0;
+  }
+}
+@media screen and (min-width: 728px) {
+  .drink-reviews-header h1 {
+    grid-area: 2/1/3/2;
+  }
+}
 .drink-reviews-header .image {
-  height: 60%;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   width: 100%;
   border-radius: 16px;
+}
+@media screen and (min-width: 728px) {
+  .drink-reviews-header .image {
+    grid-area: 1/2/5/3;
+    height: 100%;
+  }
 }
 .drink-reviews-header .drink-details {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+@media screen and (min-width: 728px) {
+  .drink-reviews-header .drink-details {
+    grid-area: 3/1/4/2;
+    gap: 40px;
+  }
+}
 .drink-reviews-header .drink-details .review-overview {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+@media screen and (min-width: 728px) {
+  .drink-reviews-header .drink-details .review-overview {
+    flex-direction: column;
+  }
+}
+.drink-reviews-header .drink-details .review-overview .review-row {
+  font-family: Inter, sans-serif;
+}
+@media screen and (min-width: 728px) {
+  .drink-reviews-header .drink-details .review-overview .review-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 75%;
+    padding: 20px 0px;
+    border-bottom: 1px solid #b7a79d;
+  }
+}
 .drink-reviews-header .drink-details .review-overview .review-row p {
   font-size: 14px;
+  color: #b7a79d;
 }
 .drink-reviews-header .drink-details .review-overview .review-row:nth-child(2) {
   text-align: right;
 }
+@media screen and (min-width: 728px) {
+  .drink-reviews-header .drink-details .review-overview .review-row:nth-child(2) {
+    text-align: left;
+  }
+}
 .drink-reviews-header .drink-details .btn-primary, .drink-reviews-header .drink-details .main-hero a, .main-hero .drink-reviews-header .drink-details a {
   width: 100%;
-  color: #e65819;
-  border: 1px solid #e65819;
+  color: #4884C4;
+  border: 1px solid #4884C4;
+}
+@media screen and (min-width: 728px) {
+  .drink-reviews-header .drink-details .btn-primary, .drink-reviews-header .drink-details .main-hero a, .main-hero .drink-reviews-header .drink-details a {
+    grid-area: 4/1/5/2;
+    width: 40%;
+  }
 }
 
-.reviews-container {
-  width: 90%;
-  margin: 0 auto;
-}
-.reviews-container .review-card {
+.drink-banner {
+  margin-top: 24px;
   width: 100%;
+  background: #513420;
+}
+.drink-banner .container {
+  width: 100%;
+  color: #f2ede2;
+  font-family: inter, sans-serif;
+  font-size: 10px;
+  padding: 10px 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+@media screen and (min-width: 728px) {
+  .drink-banner .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -1126,9 +1226,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -1138,7 +1238,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -1153,7 +1253,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -1181,7 +1281,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .review-card_top, .index-drinks-section .container .card .card-details, .category-drink-container .card .content {
+.flx-row-sb, .footer .container, nav, .review-card_top, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .drink-banner .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1223,7 +1323,7 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #513420;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .logo {
@@ -1251,7 +1351,7 @@ nav .user {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -1269,9 +1369,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -1281,7 +1381,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -1296,7 +1396,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -1317,12 +1417,30 @@ p {
   line-height: 18px;
 }
 
+.reviews-container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 728px) {
+  .reviews-container {
+    max-width: 1280px;
+    margin: 54px auto;
+  }
+}
+.reviews-container .review-card {
+  width: 100%;
+}
+
 .review-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 18px 0px;
   border-bottom: 1px solid #b7a79d;
+}
+.review-card .restaurant {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
 }
 .review-card_top .user-info {
   display: flex;
@@ -1339,15 +1457,34 @@ p {
   width: 38px;
   border-radius: 100%;
 }
+@media screen and (min-width: 728px) {
+  .review-card_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .review-card_bottom p {
   font-size: 12px;
   line-height: 16px;
+}
+@media screen and (min-width: 728px) {
+  .review-card_bottom p {
+    width: 50%;
+    font-size: 16px;
+    padding-right: 20px;
+  }
 }
 .review-card_scorecard {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 12px;
   gap: 8px;
+}
+@media screen and (min-width: 728px) {
+  .review-card_scorecard {
+    width: 50%;
+  }
 }
 .review-card_scorecard .scorecard-block {
   padding: 8px;
@@ -1372,7 +1509,7 @@ p {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -1390,9 +1527,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -1402,7 +1539,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -1417,7 +1554,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -1445,7 +1582,7 @@ nav .user {
   align-items: flex-start;
 }
 
-.flx-row-sb, nav, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .review-card_top {
+.flx-row-sb, .footer .container, nav, .index-drinks-section .container .card .card-details, .category-drink-container .card .content, .drink-banner .container, .review-card_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1487,7 +1624,7 @@ nav .user {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #513420;
+  color: white;
 }
 @media screen and (max-width: 728px) {
   .logo {
@@ -1515,7 +1652,7 @@ nav .user {
 }
 
 h1 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 72px;
@@ -1533,9 +1670,9 @@ h2 {
   font-family: inter, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
-  letter-spacing: -0.1em;
-  line-height: 28px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  line-height: 24px;
 }
 @media screen and (max-width: 728px) {
   h2 {
@@ -1545,7 +1682,7 @@ h2 {
 }
 
 h3 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 42px;
@@ -1560,7 +1697,7 @@ h3 {
 }
 
 h4 {
-  font-family: "ivypresto-display", serif;
+  font-family: inter, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
@@ -1584,6 +1721,13 @@ p {
 .form-container {
   width: 100%;
   background: #b98a65;
+  position: relative;
+}
+@media screen and (min-width: 728px) {
+  .form-container {
+    height: 100vh;
+    background: #f2ede2;
+  }
 }
 .form-container .container {
   width: 100%;
@@ -1593,7 +1737,29 @@ p {
 @media screen and (min-width: 728px) {
   .form-container .container {
     width: 1280px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    display: flex;
+    background: #b98a65;
+    overflow: scroll;
+    border-radius: 16px;
+  }
+}
+.form-container .container .details {
+  color: white;
+}
+@media screen and (min-width: 728px) {
+  .form-container .container .details {
+    margin-top: 54px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
   }
 }
 .form-container .container .details h2 {
@@ -1607,7 +1773,10 @@ p {
 }
 @media screen and (min-width: 728px) {
   .form-container .container .row-1 {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
   }
 }
 .form-container .container .row-1 .star-rating {
@@ -1621,6 +1790,9 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.form-container .container .row-1 .star-rating h4 {
+  font-weight: 300;
 }
 .form-container .container .row-1 .star-rating div:nth-child(1) {
   display: flex;
@@ -1637,6 +1809,12 @@ p {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: #f2ede2;
+}
+@media screen and (min-width: 728px) {
+  .form-container .container .review-form {
+    width: 50%;
+  }
 }
 .form-container .container .review-form .btn-primary, .form-container .container .review-form .main-hero a, .main-hero .form-container .container .review-form a {
   border: 1px solid #f2ede2;
@@ -1670,6 +1848,7 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .form-container .container .row-2 .column .restaurant {
   display: flex;
@@ -1759,6 +1938,7 @@ input[type=radio]:focus + label {
 .border {
   outline: none;
   border-color: none;
+  margin-top: 1vmin;
 }
 
 body {
@@ -1779,16 +1959,15 @@ nav {
   padding: 20px 30px;
   position: fixed;
   z-index: 100;
-  background: #f2ede2;
-  border-bottom: 1px solid #513420;
+}
+nav a {
+  color: #ffffff;
 }
 @media screen and (max-width: 728px) {
   nav {
     padding: 10px 30px;
+    color: white;
   }
-}
-nav a {
-  color: #513420;
 }
 @media screen and (min-width: 728px) {
   nav .logo {
@@ -1796,13 +1975,14 @@ nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
   }
 }
 nav .categories,
 nav .user {
   gap: 32px;
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: lowercase;
   font-weight: 300;
 }
@@ -1811,6 +1991,16 @@ nav .user {
   nav .user {
     font-size: 16px;
   }
+}
+nav .user {
+  border: 1px solid #f2ede2;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  backdrop-filter: blur(5px);
 }
 @media screen and (max-width: 728px) {
   nav .categories {
@@ -1823,5 +2013,13 @@ nav .categories:hover {
 
 .footer {
   background: #eadab7;
-  height: 400px;
+  width: 100%;
+}
+.footer .container {
+  width: 100%;
+  padding: 30px;
+  color: white;
+}
+.footer .container img {
+  width: 150px;
 }/*# sourceMappingURL=main.css.map */

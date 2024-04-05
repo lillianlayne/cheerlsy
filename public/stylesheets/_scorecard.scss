@@ -1,12 +1,38 @@
 @import "mixins";
 @import "typography";
 
+.reviews-container {
+  width: 90%;
+  margin: 0 auto;
+
+
+  @media screen and (min-width: 728px) {
+   max-width: 1280px;
+   margin: 54px auto;
+  }
+
+  .review-card {
+    width: 100%;
+
+  }
+}
+
+
 .review-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 18px 0px;
   border-bottom: 1px solid $text-500;
+
+  @media screen and (min-width: 728px) {
+
+   }
+
+.restaurant {
+font-size: 16px;
+font-family: Inter, sans-serif;
+}
 
   &_top {
     @extend .flx-row-sb;
@@ -15,6 +41,9 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      @media screen and (min-width: 728px) {
+
+      }
 
       .user-date {
         .name {
@@ -32,9 +61,20 @@
   }
   
   &_bottom {
+    @media screen and (min-width: 728px) {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;;
+    }
     p {
       font-size: 12px;
       line-height: 16px;
+
+    @media screen and (min-width: 728px) {
+     width: 50%;
+     font-size: 16px;
+     padding-right: 20px;
+     }
     }
   }
   
@@ -43,11 +83,15 @@
     grid-template-columns: repeat(5, 1fr);
     margin-top: 12px;
     gap: 8px;
+    @media screen and (min-width: 728px) {
+      width: 50%;
+    }
     .scorecard-block {
       padding: 8px;
       text-align: center;
       background: rgba(255, 255, 255, .5);
       border-radius: 8px;
+
       h3 {
         font-size: 18px;
         font-weight: 300;

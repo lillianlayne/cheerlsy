@@ -1,5 +1,6 @@
 @import 'typography';
 
+
 .flx-row-start {
     display: flex;
     justify-content: center;
@@ -48,7 +49,7 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2em;
-    color: $text-100;
+    color: white;
     @media screen and (max-width: 728px) {
         font-size: 14px
     }
@@ -72,4 +73,3 @@
     }
   }
 
-  

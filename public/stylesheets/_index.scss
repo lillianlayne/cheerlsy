@@ -2,24 +2,29 @@
 @import "typography";
 
 .main-hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 80vh;
-
-  @media screen and (max-width: 728px) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: flex-end;
-  }
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  justify-content: center;
 
   .image {
     background-image: url("../images/bettybuzz-spritz.gif");
     background-size: cover;
     background-position: top;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    z-index: -99;
+    background-position: 80% 20%;
     @media screen and (max-width: 728px) {
-      height: 80%;
+      height: 100%;
       background-position: top;
     }
   }
@@ -28,11 +33,23 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
-    padding: 46px 46px 120px 46px;
+    justify-content: space-between;
+    height: 100%;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 10vmin 0 5vmin 0;
+
+    .container {
+      color: white;
+      h2 {
+        line-height: 7vmin;
+        font-size: 8vmin !important;
+      }
+    }
+
     @media screen and (max-width: 728px) {
-      padding: 30px;
-      display: inline-block;
+      padding: 60px 30px;
+      width: 100%;
     }
 
     h1 {
@@ -40,38 +57,42 @@
     }
 
     .logo {
-      font-size: 50px !important;
-      @media screen and (max-width: 728px) {
-        font-size: 32px !important;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        color: $bg-100;
+        width: 100%;
+        height: 30vmin;
       }
     }
   }
 
   a {
     @extend .btn-primary;
-    margin-top: 54px;
-
-    background-color: transparent;
-    color: $orange-100;
-    border: 1px solid $orange-100;
+    margin-top: 5vmin;
+    background: $accent;
+    color: white;
 
     @media screen and (max-width: 728px) {
       background-color: transparent;
-      color: $orange-100;
-      border: 1px solid $orange-100;
+      background: $accent;
+      color: white;
       margin-top: 24px;
     }
 
     &:hover {
-      background-color: $orange-100;
-      color: $bg-100;
+      background: white;
+      color: $accent;
     }
   }
 }
 
 .banner {
   width: 100%;
-  overflow: scroll;
+  overflow: hidden;
   background: $text-100;
   color: $bg-100;
 
@@ -81,7 +102,6 @@
     text-wrap: nowrap;
     height: 40px;
     align-items: center;
-    
 
     .label {
       font-family: Inter, sans-serif;
@@ -97,7 +117,7 @@
   display: flex;
   flex-direction: column;
   margin: 34px auto;
-  width: 1280px;
+  max-width: 1280px;
   gap: 24px;
 
   @media screen and (max-width: 728px) {
@@ -107,10 +127,11 @@
 
   .container {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
-    margin-bottom: 54px;
+    align-content: center;
 
     @media screen and (max-width: 728px) {
       display: flex;
@@ -122,7 +143,8 @@
       height: 600px;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      justify-content: center;
+      gap: 24px;
 
       @media screen and (max-width: 728px) {
         height: 300px;
@@ -130,8 +152,9 @@
 
       .image {
         width: 100%;
-        height: 90%;
+        aspect-ratio: 1 / 1;
         background-size: cover;
+        border-radius: 16px;
 
         @media screen and (max-width: 728px) {
           background-position: center;
@@ -141,7 +164,8 @@
       .card-details {
         @extend .flx-row-sb;
         color: $text-100;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        padding: 0px 8px;
 
         img {
           height: 20px;
